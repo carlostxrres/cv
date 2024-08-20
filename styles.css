@@ -1,0 +1,186 @@
+:root {
+    /* --main: #00290f;
+    --space: 1rem;
+    --header-height: 22mm;
+    --outter-margin: 16mm;
+    --inner-margin: 9mm;
+    --text-align: left;
+    --color-border: #919994; */
+
+    --color-text-1: #292b2a;
+    --color-text-2: #6f7371;
+}
+
+body {
+    width: 21cm;
+    height: 29.7cm;
+    /* hyphens: manual; */
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: grid;
+    grid-template-columns: 38.1953% auto;
+
+    padding: var(--outter-margin) var(--inner-margin);
+
+    border: 1px solid black;
+    color: var(--color-text-1);
+}
+
+/* Basic tags */
+strong {
+    font-weight: bold;
+}
+
+small {
+    font-size: .8rem;
+    color: var(--color-text-2);
+}
+
+/* Layout */
+.aside,
+.main {
+    padding: 2rem;
+}
+
+.aside {
+    background-color: var(--color-main-3);
+}
+
+.main {
+    background-color: white;
+}
+
+.cv-header,
+.section {
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Header */
+.pic {
+    margin: auto;
+    max-width: 6rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: var(--font-head);
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+/* Sections */
+h2 {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: .2rem;
+    border-bottom: 2px solid var(--color-main);
+    color: var(--color-main);
+}
+
+.section-content {
+
+    font-family: var(--font-narrow);
+}
+
+dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: .2rem 1rem;
+}
+
+dt {
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+dd {
+    margin: 0;
+    align-content: center;
+}
+
+p {
+    margin-block: .5rem;
+    text-wrap: pretty;
+}
+
+*+p:first-of-type {
+    margin-top: 1rem;
+}
+
+/* Utils */
+
+.indent {
+    text-indent: .5rem;
+}
+
+ul:not(.list-condensed)>li:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+/* List Chronological */
+
+.list-chronological {
+    list-style: circle none outside;
+    padding-left: 1rem;
+    position: relative;
+    --padding-left: 1rem;
+    --bullet-size: .4rem;
+    --translate-y: .3rem;
+}
+
+.list-chronological::before {
+    content: "";
+    position: absolute;
+    top: var(--translate-y);
+    bottom: 0;
+    left: calc(var(--bullet-size) / 2);
+    border-left: 2px solid var(--color-main-2);
+}
+
+.list-chronological>li::before {
+    content: "";
+    position: absolute;
+    width: var(--bullet-size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid var(--color-main);
+    background-color: white;
+    transform: translate(calc(-1 * var(--padding-left)), var(--translate-y));
+}
+
+/* List Regular */
+
+.list-regular {
+    list-style: disc none outside;
+    list-style-type: disc;
+    padding-left: var(--padding-left);
+    --padding-left: 1rem;
+    --translate-y: .4rem;
+}
+
+.list-regular>li::before {
+    content: "";
+    position: absolute;
+    width: .3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-main);
+    transform: translate(calc(-.8 * var(--padding-left)), var(--translate-y));
+}
+
+/* List Subtle */
+
+.list-subtle {
+    display: flex;
+    flex-direction: column;
+}

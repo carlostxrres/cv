@@ -94,7 +94,7 @@ a:hover {
 .section {
     padding-block: 1rem;
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 /* Header */
@@ -154,7 +154,7 @@ dd {
 }
 
 p {
-    margin-block: .5rem;
+    margin-block: .3rem;
     text-wrap: pretty;
 }
 
@@ -163,7 +163,7 @@ p:first-child {
 }
 
 ul {
-    margin-block: .5rem;
+    margin-block: .3rem;
 }
 
 li {
@@ -258,7 +258,6 @@ h3 {
 /* Utils */
 .certificated {
     display: flex;
-    /* justify-content: space-between; */
     align-items: end;
     flex-direction: column;
 }
@@ -267,6 +266,11 @@ h3 {
     font-size: .6rem;
     color: var(--color-main-3);
     text-transform: uppercase;
+}
+
+dd.certificated {
+    flex-direction: revert;
+    justify-content: space-between;
 }
 
 .indent {
@@ -310,7 +314,7 @@ h3 {
 }
 
 .list-chronological>li:not(:last-child) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* List Regular */
@@ -340,12 +344,4 @@ h3 {
 
 ul .list-regular>li:not(:last-child) {
     margin-bottom: 0;
-}
-
-/* List Subtle */
-
-.list-subtle {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
 }

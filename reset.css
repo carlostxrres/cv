@@ -7,8 +7,11 @@
 /* Aquí definimos las Custom properties */
 :root {
     --color-main: #07441d;
-    --color-main-2: #abcfb9;
-    --color-main-3: #eaeeeb;
+    --color-main-2: #446e53;
+    --color-main-3: #81988a;
+    --color-main-4: #eaeeeb;
+
+    --color-main-transparent: #07441d35;
     --white: #f3f3f3;
     /* Tipografía */
     --font-head: "Montserrat";
@@ -44,7 +47,6 @@ figure {
 
 /* Reseteamos los enlaces para funcionar como cajas... */
 a {
-    display: block;
     text-decoration: none;
     color: inherit;
     font-size: inherit;
@@ -100,12 +102,12 @@ q:after {
 /* Configuramos el texto que seleccionamos */
 ::-moz-selection {
     background-color: var(--color-main);
-    color: var(--color-main-3);
+    color: var(--color-main-4);
 }
 
 ::selection {
     background-color: var(--color-main);
-    color: var(--color-main-3);
+    color: var(--color-main-4);
 }
 
 /* Nivelamos problemas de tipografías y colocación de formularios */

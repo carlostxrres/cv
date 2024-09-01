@@ -137,6 +137,10 @@ h2 {
     flex-direction: column;
 }
 
+dl:not(:first-child) {
+    margin-top: 1rem;
+}
+
 dl {
     display: grid;
     grid-template-columns: max-content auto;

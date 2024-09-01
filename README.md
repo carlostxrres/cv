@@ -1,4 +1,4 @@
-### Fonts
+## Fonts
 
 Since performance is irrelevant, this is using four fonts form Google Fonts:
 
@@ -20,7 +20,7 @@ Since performance is irrelevant, this is using four fonts form Google Fonts:
   - [ ] Get the actual English certificate (requires paperwork)
   - [x] Use tags to make more visually clear the technologies used in each work
 
-  ### To add if I have more space
+## To add if I have more space
 
 - More projects
 - A volunteering section with:

@@ -11,7 +11,13 @@
     --color-text-2: #6f7371;
 }
 
+
 body {
+    background-color: #fff5f7;
+    background-image: linear-gradient(135deg, #f6fff5 0%, #fdfeff 100%);
+}
+
+.page {
     width: 21cm;
     height: 29.7cm;
     /* hyphens: manual; */
@@ -28,6 +34,10 @@ body {
 
     /* border: 1px solid black; */
     color: var(--color-text-1);
+
+    box-shadow: -20px 20px 60px 0 rgba(0, 0, 0, .1);
+
+    overflow: hidden;
 }
 
 /* Basic HTML tags */
@@ -90,9 +100,9 @@ a:hover {
     background-color: white;
 }
 
-.cv-header,
+/* .cv-header, */
 .section {
-    padding-block: 1rem;
+    margin-block: 1rem;
     display: flex;
     gap: .5rem;
 }
@@ -110,7 +120,7 @@ a:hover {
 
 .pic {
     margin: auto;
-    max-width: 4rem;
+    max-width: 3.5rem;
     aspect-ratio: 1;
     border-radius: 50%;
 }
@@ -247,7 +257,7 @@ h3 {
 .last-updated {
     position: absolute;
     bottom: 1rem;
-    left: 1rem;
+    right: 1rem;
     font-style: italic;
     color: var(--color-main-3);
     font-size: .6rem;
@@ -279,6 +289,14 @@ dd.certificated {
 
 .indent {
     text-indent: .5rem;
+}
+
+.narrow-2 {
+    letter-spacing: -.2px;
+}
+
+.narrow-5 {
+    letter-spacing: -.5px;
 }
 
 /* List Condensed */

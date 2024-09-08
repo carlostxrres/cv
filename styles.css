@@ -6,6 +6,7 @@
 
     --color-main-transparent: #07441d35;
     --white: #f3f3f3;
+
     /* Tipografía */
     --font-head: "Montserrat";
     --font-body: "Roboto";
@@ -68,26 +69,6 @@ small {
     color: var(--color-text-2);
 }
 
-/* a {
-    position: relative;
-    display: inline;
-}
-
-a::before {
-    content: '';
-    background-color: var(--color-main-transparent);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    transition: height 300ms ease;
-}
-
-a:hover::before {
-    height: 100%;
-} */
-
 a {
     position: relative;
     text-decoration: none;
@@ -101,8 +82,6 @@ a {
 a:hover {
     background-size: 100% 100%;
 }
-
-
 
 /* Layout */
 .aside,
@@ -201,10 +180,6 @@ ul {
 li {
     text-wrap: pretty;
 }
-
-/* *+p:first-of-type {
-    margin-top: 1rem;
-} */
 
 /* Experiences */
 h3 {
@@ -327,13 +302,7 @@ dd.certificated {
     letter-spacing: -.5px;
 }
 
-/* List Condensed */
-/* .list-condensed {
-    font-family: var(--font-mono);
-} */
-
 /* List Chronological */
-
 .list-chronological {
     list-style: circle none outside;
     padding-left: 1rem;
@@ -368,7 +337,6 @@ dd.certificated {
 }
 
 /* List Regular */
-
 .list-regular {
     list-style: disc none outside;
     list-style-type: disc;

@@ -59,6 +59,13 @@ body {
     color: var(--color-text-1);
 }
 
+/* Make page responsive */
+@media (max-width: 767px) {
+    .page {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Basic HTML tags */
 strong {
     font-weight: bold;
@@ -109,17 +116,17 @@ a:hover {
     margin-bottom: auto;
     display: flex;
     flex-direction: row;
+    gap: 1rem;
+}
+
+.pic {
+    max-width: 3.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
 }
 
 .title {
     color: var(--color-main-2);
-}
-
-.pic {
-    margin: auto;
-    max-width: 3.5rem;
-    aspect-ratio: 1;
-    border-radius: 50%;
 }
 
 h1 {

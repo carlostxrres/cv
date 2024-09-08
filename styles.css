@@ -269,12 +269,22 @@ h3 {
 
 /* Last updated */
 .last-updated {
+    display: none;
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: white;
+
     font-style: italic;
     color: var(--color-main-3);
     font-size: .6rem;
+}
+
+@media print {
+    .last-updated {
+        display: block;
+    }
 }
 
 /* Utils */

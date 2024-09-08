@@ -1,16 +1,20 @@
 :root {
-    /* --main: #00290f;
-    --space: 1rem;
-    --header-height: 22mm;
-    --outter-margin: 16mm;
-    --inner-margin: 9mm;
-    --text-align: left;
-    --color-border: #919994; */
+    --color-main: #07441d;
+    --color-main-2: #446e53;
+    --color-main-3: #81988a;
+    --color-main-4: #eaeeeb;
+
+    --color-main-transparent: #07441d35;
+    --white: #f3f3f3;
+    /* Tipografía */
+    --font-head: "Montserrat";
+    --font-body: "Roboto";
+    --font-narrow: "Roboto Condensed";
+    --font-mono: "Roboto Mono";
 
     --color-text-1: #292b2a;
     --color-text-2: #6f7371;
 }
-
 
 body {
     background-color: #f5f6ff;

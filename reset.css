@@ -4,22 +4,6 @@
   From https://github.com/eduardofierropro/Reset-CSS
 */
 
-/* Aquí definimos las Custom properties */
-:root {
-    --color-main: #07441d;
-    --color-main-2: #446e53;
-    --color-main-3: #81988a;
-    --color-main-4: #eaeeeb;
-
-    --color-main-transparent: #07441d35;
-    --white: #f3f3f3;
-    /* Tipografía */
-    --font-head: "Montserrat";
-    --font-body: "Roboto";
-    --font-narrow: "Roboto Condensed";
-    --font-mono: "Roboto Mono";
-}
-
 /* Reseteamos los margin y paddings de todas las etiquetas */
 * {
     margin: 0;
@@ -45,16 +29,11 @@ figure {
     object-position: center center;
 }
 
-/* Reseteamos los enlaces para funcionar como cajas... */
+/* Reseteamos los enlaces */
 a {
     text-decoration: none;
     color: inherit;
     font-size: inherit;
-}
-
-/* ... excepto los que se encuentran en párrafos */
-p a {
-    display: inline;
 }
 
 /* Quitamos los puntos de los <li> */
@@ -125,7 +104,6 @@ label {
     background-color: transparent;
     color: inherit;
     display: block;
-    /* opcional */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -150,14 +128,10 @@ svg {
 body {
     font-size: 14px;
     font-family: var(--font-body);
-    /* opcional */
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
-    /* opcional */
     font-smooth: always;
-    /* opcional */
     -webkit-font-smoothing: antialiased;
-    /* opcional */
     -moz-osx-font-smoothing: grayscale;
 }

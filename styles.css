@@ -303,7 +303,7 @@ dd.certificated {
 }
 
 /* List Chronological */
-.list-chronological {
+.list-timeline {
     list-style: circle none outside;
     padding-left: 1rem;
     position: relative;
@@ -312,7 +312,7 @@ dd.certificated {
     --translate-y: .3rem;
 }
 
-.list-chronological::before {
+.list-timeline::before {
     content: "";
     position: absolute;
     top: var(--translate-y);
@@ -321,7 +321,7 @@ dd.certificated {
     border-left: 2px solid var(--color-main-3);
 }
 
-.list-chronological>li::before {
+.list-timeline>li::before {
     content: "";
     position: absolute;
     width: var(--bullet-size);
@@ -332,7 +332,7 @@ dd.certificated {
     transform: translate(calc(-1 * var(--padding-left)), var(--translate-y));
 }
 
-.list-chronological>li:not(:last-child) {
+.list-timeline>li:not(:last-child) {
     margin-bottom: 1rem;
 }
 

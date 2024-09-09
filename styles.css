@@ -120,7 +120,7 @@ a:hover {
 }
 
 .pic {
-    max-width: 3.5rem;
+    flex-basis: 3.5rem;
     aspect-ratio: 1;
     border-radius: 50%;
 }

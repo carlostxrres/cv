@@ -273,6 +273,37 @@ h3 {
     }
 }
 
+/* Buttons */
+.buttons-web {
+    position: fixed;
+    inset: auto 0 0 0;
+    background-color: var(--color-main-4);
+    border-top: 1px solid var(--color-main-3);
+    padding: .3rem .5rem;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.button-anchor {
+    cursor: pointer;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    color: var(--color-text-2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.button-icon {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.button-icon svg {
+    color: var(--color-main-2);
+}
+
 /* Utils */
 .space-between {
     display: flex;
@@ -307,6 +338,12 @@ dd.certificated {
 
 .narrow-5 {
     letter-spacing: -.5px;
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
 }
 
 /* List Timeline */

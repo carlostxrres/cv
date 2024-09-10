@@ -45,6 +45,7 @@ body {
     top: 0;
     bottom: 0;
     overflow-y: auto;
+    scrollbar-width: thin;
 
     /* Add realistic paper page features */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),

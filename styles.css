@@ -193,6 +193,13 @@ li {
     text-wrap: pretty;
 }
 
+.inline-code {
+    font-weight: 600;
+    color: var(--color-main-2);
+    font-family: var(--font-mono);
+    font-size: .8rem;
+}
+
 /* Experiences */
 h3 {
     /* font-family: var(--font-head); */

@@ -1,0 +1,86 @@
+:root {
+  --color-main: #07441d;
+  --color-main-2: #446e53;
+  --color-main-3: #81988a;
+  --color-main-4: #eaeeeb;
+
+  --color-main-transparent: #07441d35;
+  --white: #f3f3f3;
+
+  /* Tipografía */
+  --font-head: "Montserrat";
+  --font-body: "Roboto";
+  --font-narrow: "Roboto Condensed";
+  --font-mono: "Roboto Mono";
+
+  --color-text-1: #292b2a;
+  --color-text-2: #6f7371;
+}
+
+body {
+  background-color: #f5f6ff;
+  background-image: linear-gradient(135deg, #f6fff5 0%, #fdfeff 100%);
+
+  /* Position the page inside */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
+
+}
+
+strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 85%;
+  color: var(--color-text-2);
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  background: linear-gradient(var(--color-main-transparent) 0%, var(--color-main-transparent) calc(100% - 2px), transparent calc(100% - 2px), transparent 100%);
+  transition: background-size 300ms ease;
+  background-size: 100% 4px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+}
+
+a:hover {
+  background-size: 100% 100%;
+}
+
+p {
+  margin-block: .3rem;
+  text-wrap: pretty;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+ul {
+  margin-block: .3rem;
+}
+
+li {
+  text-wrap: pretty;
+}
+
+/* .inline-code {
+  font-weight: 600;
+  color: var(--color-main-2);
+  font-family: var(--font-mono);
+  font-size: .8rem;
+} */
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}

@@ -27,6 +27,20 @@
     ],
     "education": [
         {
+            "institution": "Ironhack",
+            "title": "SQL & Python Fundamentals",
+            "period": "Nov 2024 - Dec 2024",
+            "link": {
+                "text": "Certificate",
+                "url": "https://www.credential.net/fd65c6e8-e80c-411b-afbc-36eb6573550b"
+            },
+            "description": "Completed a 60-hour course on Data Analytics, focusing on SQL for data querying and Python with Pandas and NumPy for data manipulation and analysis.",
+            "tags": [
+                "MySQL",
+                "Python"
+            ]
+        },
+        {
             "institution": "Amazon Web Services (AWS)",
             "title": "AWS Certified Cloud Practitioner",
             "period": "Nov 2024",

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import cv from "@/assets/cv.ts";
+import cv from "@/data/cv";
 </script>
 
 <template>

@@ -15,9 +15,12 @@ defineProps<{
 section {
   font-family: var(--font-narrow);
   flex-direction: column;
-  margin-block: 1rem;
   display: flex;
   gap: 0.5rem;
+}
+
+section:not(:first-child) {
+  margin-top: 1rem;
 }
 
 h2 {

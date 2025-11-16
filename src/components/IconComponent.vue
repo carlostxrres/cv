@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from "vue";
-
 type IconName = "github" | "pdf";
 
 defineProps<{

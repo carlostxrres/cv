@@ -20,16 +20,6 @@
 body {
   background-color: #f5f6ff;
   background-image: linear-gradient(135deg, #f6fff5 0%, #fdfeff 100%);
-
-  /* Position the page inside */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100dvh;
-  overflow: hidden;
-  position: relative;
-
 }
 
 strong {

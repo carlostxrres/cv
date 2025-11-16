@@ -33,28 +33,21 @@ const currentDate = new Date().toLocaleString("en-US", {
 <style scoped>
 .page {
   /* Set A4 paper dimensions */
-  --a4-height: 29.7cm;
-  --a4-width: 21cm;
-  width: var(--a4-width);
-  height: var(--a4-height);
-
-  /* Center the page in the screen */
-  max-width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  overflow-y: auto;
-  scrollbar-width: thin;
+  aspect-ratio: 1 / sqrt(2);
+  overflow: auto;
+  max-width: 54rem; /* adjust this to content */
 
   /* Add realistic paper page features */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1),
     0 25px 50px rgba(0, 0, 0, 0.05);
 
+  /* Center */
+  margin: auto;
+
   /* Organize inner contents */
   position: relative;
   display: grid;
-  grid-template-columns: 47% auto;
-  padding: var(--outter-margin) var(--inner-margin);
+  grid-template-columns: 45% auto;
   color: var(--color-text-1);
 }
 

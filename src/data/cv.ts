@@ -5,7 +5,7 @@ const cv: Cv = {
   lastName: "Torres Moral",
   title: "SPS Associate CS Andon Cord",
   aboutMe:
-    "Former educator with a recent focus on boosting productivity at Amazon, I bring 1+ years of experience in IT and a strong foundation in vanilla JavaScript, along with some exposure to front-end and back-end frameworks.\n\nI know the importance of clean code and design, and I am motivated by elegant logics and by making a tangible impact for clients, which drives me to continuously improve my skills.\n\nWith experience in research, policy analysis, data-driven problem-solving, and cultural awareness from political science and Spanish teaching, I have thrived in diverse environments: freelancing, small businesses, and a major corporation.",
+    "Former educator with a recent focus on boosting productivity at Amazon, I bring 3+ years of experience in IT and a strong foundation in TypeScript, along with some exposure to front-end and back-end frameworks.\n\nI know the importance of clean code and design, and I am motivated by elegant logics and by making a tangible impact for clients, which drives me to continuously improve my skills.\n\nWith experience in research, policy analysis, data-driven problem-solving, and cultural awareness from political science and Spanish teaching, I have thrived in diverse environments: freelancing, small businesses, and a major corporation.",
   contactDetails: [
     {
       label: "Email",
@@ -107,15 +107,39 @@ const cv: Cv = {
   ],
   work: [
     {
-      title: "SPS Associate CS Andon Cord",
+      title: "CS Andon Cord SME (L4)",
       institution: "Amazon",
-      period: "Jan 2022 - Now",
+      period: "May 2025 - Now",
       description:
-        "Researched customer inquiries & inventory discrepancies to identify root causes of customer dissatisfaction peaks and ensure the accuracy of product data, liaising with internal warehouses and external vendors. After a year, my role evolved to exclusively focus on web front-end developing to enhance productivity.",
+        "I continue leading technical development while expanding responsibilities to participate in decisions that shape team direction within the management.",
       bulletPoints: [
-        "Leveraging internal Amazon APIs to drive efficiency by automating manual work.",
-        "Revolutionizing workflows for Quality Audits, Support Requests, Metrics, and other specific processes, resulting in significant productivity increases.",
-        "Addressing technical issues in my team.",
+        "Automated 8 weekly reports about team productivity and quality.",
+        "Analyzing data for ad-hoc deep dives.",
+        "Mentoring a junior developer.",
+        "Providing technical consultation to several teams.",
+        "Maintaining 31 production scripts with +90 users each.",
+        // process improvement, operational procedures, launches
+        // complete projects within given timelines
+      ],
+      tags: [
+        "TypeScript",
+        "Node.js",
+        "Data Analytics",
+        "Mentorship",
+        "Project management",
+        "Stakeholder management",
+      ],
+    },
+    {
+      title: "CS Andon Cord Associate (L3)",
+      institution: "Amazon",
+      period: "Jan 2022 - May 2025",
+      description:
+        "Researched customer inquiries & inventory discrepancies to identify root causes of customer dissatisfaction peaks and ensure the accuracy of product data, liaising with internal warehouses and external vendors. In early 2023, became the solo full-time front-end developer in the team.",
+      bulletPoints: [
+        "Leaded process-improvement initiatives that leveraged internal Amazon APIs to drive efficiency by automating manual work.",
+        'Designed systems such as "Support Requests" and "Quality Audits" with +29,000 and +13,000 items processed in the first two years.',
+        "Served as primary tech contact in the team.",
       ],
       tags: [
         "Analytical skills",
@@ -185,5 +209,9 @@ const cv: Cv = {
     },
   ],
 };
+
+// Prizes:
+// - "Earned a RISE 'Customer Obsession' award (with 3 recipients in SPS worldwide, where I had the most nominations in AEMENA's 661 nominees)",
+// - "Earned 2 GEM (Go the Extra Mile) awards.",
 
 export default cv;

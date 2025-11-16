@@ -28,4 +28,10 @@ import ButtonAnchor from "@/components/ButtonAnchor.vue";
   gap: 0.5rem;
   justify-content: center;
 }
+
+@media print {
+  .actions-bar {
+    display: none;
+  }
+}
 </style>

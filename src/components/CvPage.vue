@@ -51,10 +51,20 @@ const currentDate = new Date().toLocaleString("en-US", {
   color: var(--color-text-1);
 }
 
+@media print {
+  .page {
+    box-shadow: unset;
+  }
+}
+
 /* Make page responsive */
 @media (max-width: 767px) {
   .page {
+    aspect-ratio: unset;
+    box-shadow: unset;
     grid-template-columns: 1fr;
+
+    margin-bottom: 3rem;
   }
 }
 

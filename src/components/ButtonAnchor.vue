@@ -1,20 +1,11 @@
-<script setup>
+<script setup lang="ts">
 import IconComponent from "/src/components/IconComponent.vue";
 
-defineProps({
-  label: {
-    type: String,
-    required: true,
-  },
-  href: {
-    type: String,
-    required: true,
-  },
-  icon: {
-    type: String,
-    required: false,
-  },
-});
+defineProps<{
+  label: string;
+  href: string;
+  icon: string;
+}>();
 </script>
 
 <template>

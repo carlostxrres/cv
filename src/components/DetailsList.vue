@@ -1,10 +1,9 @@
-<script setup>
-defineProps({
-  details: {
-    type: Array,
-    required: true,
-  },
-});
+<script setup lang="ts">
+import { type ContactDetail } from "@/types/cv"
+
+defineProps<{
+  details: ContactDetail[]
+}>()
 </script>
 
 <template>
@@ -12,8 +11,7 @@ defineProps({
     <template v-for="(item, index) in details" :key="index">
       <dt>{{ item.label }}</dt>
       <dd>
-        <slot :name="item.slotName" v-bind="item" v-if="item.slotName" />
-        <a v-else-if="item.href" :href="item.href" target="_blank">
+        <a v-if="item.href" :href="item.href" target="_blank">
           {{ item.value }}
         </a>
         <span v-else>{{ item.value }}</span>

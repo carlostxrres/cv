@@ -1,12 +1,10 @@
-<script setup>
-import TagList from "/src/components/TagList.vue";
+<script setup lang="ts">
+import type { Education, Project, Volunteering, Work } from "@/types/cv";
+import TagList from "@/components/TagList.vue"; // Fixed import path
 
-defineProps({
-  items: {
-    type: Array,
-    required: true,
-  },
-});
+defineProps<{
+  items: Education[] | Project[] | Volunteering[] | Work[];
+}>();
 </script>
 
 <template>
@@ -14,24 +12,24 @@ defineProps({
     <li v-for="(item, index) in items" :key="index">
       <header class="space-between">
         <div>
-          <span v-if="item.institution" class="institution">
-            {{ item.institution }}
+          <span v-if="(item as any).institution" class="institution">
+            {{ (item as any).institution }}
           </span>
-          <span v-if="item.location" class="location">
-            {{ item.location }}
+          <span v-if="(item as any).location" class="location">
+            {{ (item as any).location }}
           </span>
           <h3>
             {{ item.title }}
           </h3>
         </div>
 
-        <div v-if="item.period || item.link" class="certificated">
+        <div v-if="(item as any).period || (item as any).link" class="certificated">
           <span class="time">
-            {{ item.period }}
+            {{ (item as any).period }}
           </span>
 
-          <a v-if="item.link" :href="item.link.url" target="_blank">
-            {{ item.link.text }}
+          <a v-if="(item as any).link" :href="(item as any).link.url" target="_blank">
+            {{ (item as any).link.text }}
           </a>
         </div>
       </header>
@@ -39,21 +37,22 @@ defineProps({
       <p v-if="item.description" v-html="item.description" />
 
       <ul
-        v-if="item.bulletPoints && item.bulletPoints.length"
+        v-if="(item as any).bulletPoints && (item as any).bulletPoints.length"
         class="list-regular list-condensed"
       >
         <li
-          v-for="(bulletPoint, bulletPointIndex) in item.bulletPoints"
+          v-for="(bulletPoint, bulletPointIndex) in (item as any).bulletPoints"
           :key="bulletPointIndex"
         >
           {{ bulletPoint }}
         </li>
       </ul>
 
-      <TagList :tags="item.tags" />
+      <TagList :tags="(item as any).tags" />
     </li>
   </ul>
 </template>
+// ...existing code...
 
 <style scoped>
 h3 {

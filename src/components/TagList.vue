@@ -1,9 +1,9 @@
-<script setup>
-defineProps({
-  tags: {
-    type: Array,
-  },
-});
+<script setup lang="ts">
+import type { Tag } from "@/types/cv";
+
+defineProps<{
+  tags: Tag[];
+}>();
 </script>
 
 <template>

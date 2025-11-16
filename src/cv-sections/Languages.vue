@@ -1,5 +1,5 @@
-<script setup>
-import cv from "/src/assets/cv.json";
+<script setup lang="ts">
+import cv from "@/assets/cv.ts";
 import CvSection from "/src/components/CvSection.vue";
 import DetailsList from "/src/components/DetailsList.vue";
 </script>

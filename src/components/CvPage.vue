@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import CvSection from "/src/components/CvSection.vue";
 import Header from "/src/cv-sections/Header.vue";
 import AboutMe from "/src/cv-sections/AboutMe.vue";

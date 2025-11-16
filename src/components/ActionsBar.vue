@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import ButtonAnchor from "/src/components/ButtonAnchor.vue";
 </script>
 

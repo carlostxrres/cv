@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import CvSection from "/src/components/CvSection.vue";
-import Header from "/src/cv-sections/Header.vue";
-import AboutMe from "/src/cv-sections/AboutMe.vue";
-import Education from "/src/cv-sections/Education.vue";
-// import Projects from "/src/cv-sections/Projects.vue";
-import Work from "/src/cv-sections/Work.vue";
-import Languages from "/src/cv-sections/Languages.vue";
-// import Volunteering from "/src/cv-sections/Volunteering.vue";
+import CvSection from "@/components/CvSection.vue";
+import Header from "@/cv-sections/Header.vue";
+import AboutMe from "@/cv-sections/AboutMe.vue";
+import Education from "@/cv-sections/Education.vue";
+// import Projects from "@/cv-sections/Projects.vue";
+import Work from "@/cv-sections/Work.vue";
+import Languages from "@/cv-sections/Languages.vue";
+// import Volunteering from "@/cv-sections/Volunteering.vue";
 
 const currentDate = new Date().toLocaleString("en-US", {
   month: "long",

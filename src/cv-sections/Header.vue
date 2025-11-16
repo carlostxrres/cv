@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import cv from "@/assets/cv.ts";
-import CvSection from "/src/components/CvSection.vue";
+import CvSection from "@/components/CvSection.vue";
 </script>
 
 <template>

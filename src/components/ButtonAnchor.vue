@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import IconComponent from "/src/components/IconComponent.vue";
+import IconComponent from "@/components/IconComponent.vue";
 
 defineProps<{
   label: string;

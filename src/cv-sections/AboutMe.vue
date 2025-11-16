@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import cv from "@/assets/cv.ts";
-import CvSection from "/src/components/CvSection.vue";
-import DetailsList from "/src/components/DetailsList.vue";
+import CvSection from "@/components/CvSection.vue";
+import DetailsList from "@/components/DetailsList.vue";
 
 const aboutMeParagraphs = cv.aboutMe.split("\n\n");
 </script>

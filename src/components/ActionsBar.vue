@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ButtonAnchor from "/src/components/ButtonAnchor.vue";
+import ButtonAnchor from "@/components/ButtonAnchor.vue";
 </script>
 
 <template>

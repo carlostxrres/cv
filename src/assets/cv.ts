@@ -1,4 +1,4 @@
-import { type Cv } from "../types/cv";
+import { type Cv } from "@/types/cv";
 
 const cv: Cv = {
   name: "Carlos",

@@ -3,9 +3,9 @@ import { type Cv } from "@/types/cv";
 const cv: Cv = {
   name: "Carlos",
   lastName: "Torres Moral",
-  title: "SPS Associate CS Andon Cord",
+  title: "CS Andon Cord Subject Matter Expert",
   aboutMe:
-    "Former educator with a recent focus on boosting productivity at Amazon, I bring 3+ years of experience in IT and a strong foundation in TypeScript, along with some exposure to front-end and back-end frameworks.\n\nI know the importance of clean code and design, and I am motivated by elegant logics and by making a tangible impact for clients, which drives me to continuously improve my skills.\n\nWith experience in research, policy analysis, data-driven problem-solving, and cultural awareness from political science and Spanish teaching, I have thrived in diverse environments: freelancing, small businesses, and a major corporation.",
+    "Sole developer supporting an 80-person team at Amazon; designed, developed, and maintaining 31 production scripts that enhance web tools to improve operational efficiency. Performing data analysis and automating workflows to support daily operations.\n\nMy 3+ years of experience in IT have helped me develop a strong foundation in TypeScript, along with front-end and back-end frameworks.\n\nI value the importance of clean code and design, and I am motivated by elegant logics and making a tangible impact for clients, all things that push me to continuously improve my skills.\n\nWith experience in research, policy analysis, data driven problem-solving, and cultural awareness from political science and Spanish teaching, I have thrived in diverse business environments from freelance, small businesses, and a global corporation.",
   contactDetails: [
     {
       label: "Email",
@@ -27,11 +27,15 @@ const cv: Cv = {
       value: "/carlostorrxs",
       href: "https://www.linkedin.com/in/carlostorrxs",
     },
+    {
+      label: "Location",
+      value: "Barcelona",
+    },
   ],
   education: [
     {
       institution: "Ironhack",
-      title: "SQL & Python Fundamentals",
+      title: "Data Analytics Course",
       period: "Nov 2024 - Dec 2024",
       link: {
         text: "Certificate",
@@ -39,7 +43,7 @@ const cv: Cv = {
       },
       description:
         "Completed a 60-hour course on Data Analytics, focusing on SQL for data querying and Python with Pandas and NumPy for data manipulation and analysis.",
-      tags: ["MySQL", "Python"],
+      tags: ["MySQL", "Python", "Pandas", "NumPy"],
     },
     {
       institution: "Amazon Web Services (AWS)",
@@ -107,17 +111,18 @@ const cv: Cv = {
   ],
   work: [
     {
-      title: "CS Andon Cord SME (L4)",
+      title: "CS Andon Cord Subject Matter Expert (L4)",
       institution: "Amazon",
       period: "May 2025 - Now",
       description:
-        "I continue leading technical development while expanding responsibilities to participate in decisions that shape team direction within the management.",
+        "Building upon my previous role's responsibilities, my role has expanded to being part of the team's management.",
       bulletPoints: [
+        "Responsible for monitoring the KPIs of an 80+ associates team (touched, resolved, quality).",
         "Automated 8 weekly reports about team productivity and quality.",
         "Analyzing data for ad-hoc deep dives.",
         "Mentoring a junior developer.",
         "Providing technical consultation to several teams.",
-        "Maintaining 31 production scripts with +90 users each.",
+        "Maintaining 31 production userscripts with 90+ users each.",
         // process improvement, operational procedures, launches
         // complete projects within given timelines
       ],
@@ -135,10 +140,10 @@ const cv: Cv = {
       institution: "Amazon",
       period: "Jan 2022 - May 2025",
       description:
-        "Researched customer inquiries & inventory discrepancies to identify root causes of customer dissatisfaction peaks and ensure the accuracy of product data, liaising with internal warehouses and external vendors. In early 2023, became the solo full-time front-end developer in the team.",
+        "Researched customer inquiries and inventory discrepancies to identify root causes of customer dissatisfaction peaks and ensure the accuracy of product data, liaising with internal warehouses and external vendors. In early 2023, became the solo full-time front-end developer in the team.",
       bulletPoints: [
-        "Leaded process-improvement initiatives that leveraged internal Amazon APIs to drive efficiency by automating manual work.",
-        'Designed systems such as "Support Requests" and "Quality Audits" with +29,000 and +13,000 items processed in the first two years.',
+        "Led process-improvement initiatives that leveraged internal Amazon APIs to drive efficiency by automating manual work.",
+        'Designed systems such as "Support Requests" and "Quality Audits" with 29,000+ and 13,000+ items processed in the first two years.',
         "Served as primary tech contact in the team.",
       ],
       tags: [

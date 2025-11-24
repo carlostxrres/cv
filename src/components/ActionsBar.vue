@@ -11,7 +11,7 @@ import ButtonAnchor from "@/components/ButtonAnchor.vue";
     />
     <ButtonAnchor
       label="See as PDF"
-      href="https://raw.githubusercontent.com/carlostxrres/cv/9233417bbe69751fb56236b209d1860840dfc440/docs/carlos-torres-cv.pdf"
+      href="https://raw.githubusercontent.com/carlostxrres/cv/d3c923f5067cc8f93a51333adf443f8201025f17/docs/carlos-torres-cv.pdf"
       icon="pdf"
     />
   </div>

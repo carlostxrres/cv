@@ -9,6 +9,7 @@ export type Cv = {
   readonly work: Work[];
   readonly languages: ContactDetail[];
   readonly volunteering: Volunteering[];
+  readonly skills: Tag[];
 };
 
 export type ContactDetail = {

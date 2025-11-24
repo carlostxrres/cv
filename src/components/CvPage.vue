@@ -4,6 +4,7 @@ import AboutMe from "@/cv-sections/AboutMe.vue";
 import Education from "@/cv-sections/Education.vue";
 import Work from "@/cv-sections/Work.vue";
 import Languages from "@/cv-sections/Languages.vue";
+import Skills from "@/cv-sections/Skills.vue";
 
 const currentDate = new Date().toLocaleString("en-US", {
   month: "long",
@@ -22,6 +23,7 @@ const currentDate = new Date().toLocaleString("en-US", {
 
     <main class="main">
       <Work />
+      <Skills />
       <Languages />
       <!-- <Volunteering /> -->
     </main>

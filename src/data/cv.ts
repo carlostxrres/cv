@@ -214,6 +214,20 @@ const cv: Cv = {
         "Growing up as a scout, I have internalized certain values and I have assumed several civil and educational responsibilities. I have also been in charge of 6 to 18 year old children.",
     },
   ],
+  skills: [
+    "TypeScript",
+    "JavaScript",
+    "Node.js",
+    "Vue.js",
+    "React",
+    "HTML",
+    "CSS",
+    "Java",
+    "Spring Boot",
+    "MySQL",
+    "Python",
+    "Git",
+  ],
 };
 
 // Prizes:

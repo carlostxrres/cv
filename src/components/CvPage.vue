@@ -23,7 +23,7 @@ const currentDate = new Date().toLocaleString("en-US", {
 
     <main class="main">
       <Work />
-      <Skills />
+      <Skills class="no-print" />
       <Languages />
       <!-- <Volunteering /> -->
     </main>

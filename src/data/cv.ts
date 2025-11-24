@@ -24,7 +24,7 @@ const cv: Cv = {
     },
     {
       label: "LinkedIn",
-      value: "/carlostxrres",
+      value: "/carlostorrxs",
       href: "https://www.linkedin.com/in/carlostorrxs",
     },
   ],

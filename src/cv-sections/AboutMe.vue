@@ -3,7 +3,7 @@ import cv from "@/data/cv";
 import CvSection from "@/components/CvSection.vue";
 import DetailsList from "@/components/DetailsList.vue";
 
-const aboutMeParagraphs = cv.aboutMe.split("\n\n");
+const aboutMeParagraphs = cv.aboutMe.split("\n\n").filter((p) => p.trim());
 </script>
 
 <template>

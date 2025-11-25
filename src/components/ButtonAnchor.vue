@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import IconComponent from "@/components/IconComponent.vue";
+import type { IconName } from "@/types/icons";
 
 defineProps<{
   label: string;
   href: string;
-  icon: string;
+  icon: IconName;
 }>();
 </script>
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-type IconName = "github" | "pdf";
+import type { IconName } from "@/types/icons";
 
 defineProps<{
   icon: IconName;

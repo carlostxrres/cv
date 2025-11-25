@@ -1,10 +1,11 @@
 :root {
-  --color-main: #07441d;
-  --color-main-2: #446e53;
-  --color-main-3: #81988a;
-  --color-main-4: #eaeeeb;
+  --hue: 150;
+  --color-main: oklch(35% 0.09 var(--hue));
+  --color-main-2: oklch(50% 0.06 var(--hue));
+  --color-main-3: oklch(65% 0.03 var(--hue));
+  --color-main-4: oklch(95% 0.005 var(--hue));
 
-  --color-main-transparent: #07441d35;
+  --color-main-transparent: oklch(35% 0.09 var(--hue) / 20%);
   --white: #f3f3f3;
 
   /* Tipografía */
@@ -13,13 +14,13 @@
   --font-narrow: "Roboto Condensed";
   --font-mono: "Roboto Mono";
 
-  --color-text-1: #292b2a;
-  --color-text-2: #6f7371;
+  --color-text-1: oklch(25% 0.005 var(--hue));
+  --color-text-2: oklch(55% 0.005 var(--hue));
 }
 
 body {
-  background-color: #f5f6ff;
-  background-image: linear-gradient(135deg, #f6fff5 0%, #fdfeff 100%);
+  background-color: oklch(99% 0.01 var(--hue));
+  background-image: linear-gradient(135deg, oklch(99% 0.01 var(--hue)) 0%, oklch(99% 0.004 var(--hue)) 100%);
 }
 
 @media print {

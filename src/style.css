@@ -48,6 +48,8 @@ a {
   background-size: 100% 4px;
   background-position: 0 100%;
   background-repeat: no-repeat;
+  border-radius: 4px;
+  padding: 2px;
 }
 
 a:hover {

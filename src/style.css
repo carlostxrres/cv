@@ -17,6 +17,9 @@
   --font-body: "Roboto";
   --font-narrow: "Roboto Condensed";
   --font-mono: "Roboto Mono";
+
+  /* Spacing */
+  --a-padding: 2px;
 }
 
 body {
@@ -49,7 +52,7 @@ a {
   background-position: 0 100%;
   background-repeat: no-repeat;
   border-radius: 4px;
-  padding: 2px;
+  padding: var(--a-padding);
 }
 
 a:hover {

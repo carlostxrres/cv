@@ -141,6 +141,7 @@ h3 {
   font-size: 0.6rem;
   color: var(--color-main-3);
   text-transform: uppercase;
+  margin-right: calc(-1 * var(--a-padding));
 }
 
 dd.certificated {

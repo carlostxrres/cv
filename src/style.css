@@ -1,5 +1,7 @@
 :root {
+  /* Colors */
   --hue: 150;
+
   --color-main: oklch(35% 0.09 var(--hue));
   --color-main-2: oklch(50% 0.06 var(--hue));
   --color-main-3: oklch(65% 0.03 var(--hue));
@@ -7,14 +9,14 @@
 
   --color-main-transparent: oklch(35% 0.09 var(--hue) / 20%);
 
-  /* Tipografía */
+  --color-text-1: oklch(25% 0.005 var(--hue));
+  --color-text-2: oklch(55% 0.005 var(--hue));
+
+  /* Typography */
   --font-head: "Montserrat";
   --font-body: "Roboto";
   --font-narrow: "Roboto Condensed";
   --font-mono: "Roboto Mono";
-
-  --color-text-1: oklch(25% 0.005 var(--hue));
-  --color-text-2: oklch(55% 0.005 var(--hue));
 }
 
 body {

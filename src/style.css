@@ -6,7 +6,6 @@
   --color-main-4: oklch(95% 0.005 var(--hue));
 
   --color-main-transparent: oklch(35% 0.09 var(--hue) / 20%);
-  --white: #f3f3f3;
 
   /* Tipografía */
   --font-head: "Montserrat";

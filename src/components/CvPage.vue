@@ -27,8 +27,10 @@ const currentDate = new Date().toLocaleString("en-US", {
       <Languages />
       <!-- <Volunteering /> -->
     </main>
+  </div>
 
-    <small class="last-updated">Last updated on {{ currentDate }}</small>
+  <div class="last-updated">
+    <small>Last updated on {{ currentDate }}</small>
   </div>
 </template>
 
@@ -80,16 +82,30 @@ const currentDate = new Date().toLocaleString("en-US", {
   --tag-color: var(--color-main-4);
 }
 
-/**/
+/* .last-updated */
 
 .last-updated {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 1rem;
-  background-color: white;
-
   font-style: italic;
   color: var(--color-main-3);
+  text-align: end;
+  padding: 1rem;
+}
+
+/* Desktop: show it fixed on top of the action bar */
+@media (width > 1024px) {
+  .last-updated {
+    position: fixed;
+    right: 0;
+    bottom: 2rem;
+  }
+}
+
+/* Print: show it fixed on the corner */
+@media print {
+  .last-updated {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 </style>

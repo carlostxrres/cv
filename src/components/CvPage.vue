@@ -28,7 +28,7 @@ const currentDate = new Date().toLocaleString("en-US", {
       <!-- <Volunteering /> -->
     </main>
 
-    <div class="last-updated">Last updated on {{ currentDate }}</div>
+    <small class="last-updated">Last updated on {{ currentDate }}</small>
   </div>
 </template>
 
@@ -98,6 +98,5 @@ const currentDate = new Date().toLocaleString("en-US", {
 
   font-style: italic;
   color: var(--color-main-3);
-  font-size: 0.6rem;
 }
 </style>

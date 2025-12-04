@@ -31,15 +31,6 @@ defineProps<{
   color: var(--color-main-2);
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-}
-</style>
-
-<style>
-.main .tags li {
-  background-color: var(--color-main-4);
-}
-
-.aside .tags li {
-  background-color: white;
+  background-color: var(--tag-color);
 }
 </style>

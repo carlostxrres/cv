@@ -79,10 +79,12 @@ const currentDate = new Date().toLocaleString("en-US", {
 
 .aside {
   background-color: var(--color-main-4);
+  --tag-color: white;
 }
 
 .main {
   background-color: white;
+  --tag-color: var(--color-main-4);
 }
 
 /**/

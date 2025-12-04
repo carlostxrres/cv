@@ -19,8 +19,9 @@ import ButtonAnchor from "@/components/ButtonAnchor.vue";
 
 <style scoped>
 .actions-bar {
-  position: fixed;
-  inset: auto 0 0 0;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
   background-color: var(--color-main-4);
   border-top: 1px solid var(--color-main-3);
   padding: 0.3rem 0.5rem;

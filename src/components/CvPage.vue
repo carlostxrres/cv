@@ -33,40 +33,33 @@ const currentDate = new Date().toLocaleString("en-US", {
 </template>
 
 <style scoped>
-.page {
-  /* Set A4 paper dimensions */
-  aspect-ratio: 1 / sqrt(2);
-  overflow: auto;
-  max-width: 54rem; /* adjust this to content */
-
-  /* Add realistic paper page features */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1),
-    0 25px 50px rgba(0, 0, 0, 0.05);
-
-  /* Center */
-  margin: auto;
-
-  /* Organize inner contents */
-  position: relative;
-  display: grid;
-  grid-template-columns: 45% auto;
-  color: var(--color-text-1);
-}
-
-@media print {
+/* Wider than mobile: two columns */
+@media (width > 767px) {
   .page {
-    box-shadow: unset;
+    position: relative;
+    display: grid;
+    grid-template-columns: 45% auto;
+    color: var(--color-text-1);
   }
 }
 
-/* Make page responsive */
-@media (max-width: 767px) {
+/* Desktop: make it look like a printed page */
+@media (width > 1024px) {
   .page {
-    aspect-ratio: unset;
-    box-shadow: unset;
-    grid-template-columns: 1fr;
+    max-width: 210mm;
+    margin-block: 2rem;
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1),
+      0 25px 50px rgba(0, 0, 0, 0.05);
+  }
+}
 
-    margin-bottom: 3rem;
+/* Print: adapt to real A4 */
+@media print {
+  .page {
+    aspect-ratio: 1 / sqrt(2);
+    overflow: hidden;
+    max-width: 54rem; /* adjust this to content */
   }
 }
 

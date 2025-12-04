@@ -13,10 +13,16 @@ defineProps<{
 
 <style scoped>
 section {
-  font-family: var(--font-narrow);
+  font-family: var(--font-body);
   flex-direction: column;
   display: flex;
   gap: 0.5rem;
+}
+
+@media print {
+  section {
+    font-family: var(--font-narrow);
+  }
 }
 
 section:not(:first-child) {

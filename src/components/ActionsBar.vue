@@ -1,19 +1,12 @@
 <script setup lang="ts">
 import ButtonAnchor from "@/components/ButtonAnchor.vue";
+import { resumeGithub, resumePdf } from "@/data/urls";
 </script>
 
 <template>
   <div class="actions-bar no-print">
-    <ButtonAnchor
-      label="See in GitHub"
-      href="https://github.com/carlostxrres/cv"
-      icon="github"
-    />
-    <ButtonAnchor
-      label="See as PDF"
-      href="https://raw.githubusercontent.com/carlostxrres/cv/d3c923f5067cc8f93a51333adf443f8201025f17/docs/carlos-torres-cv.pdf"
-      icon="pdf"
-    />
+    <ButtonAnchor label="See in GitHub" :href="resumeGithub" icon="github" />
+    <ButtonAnchor label="See as PDF" :href="resumePdf" icon="pdf" />
   </div>
 </template>
 

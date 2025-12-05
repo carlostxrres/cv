@@ -28,5 +28,13 @@ import ButtonAnchor from "@/components/ButtonAnchor.vue";
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (width >= 343px) {
+  .actions-bar {
+    flex-direction: row;
+  }
 }
 </style>

@@ -126,7 +126,7 @@ const cv: Cv = {
       description:
         "Building upon my previous role's responsibilities, my role has expanded to being part of the team's management.",
       bulletPoints: [
-        "Responsible for monitoring the KPIs of an 80+ associates team (touched, resolved, quality).",
+        "Responsible for monitoring the KPIs of an 80+ associates team.",
         "Automated 8 weekly reports about team productivity and quality.",
         "Analyzing data for ad-hoc deep dives.",
         "Mentoring a junior developer.",

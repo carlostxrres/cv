@@ -14,8 +14,7 @@ export type Cv = {
 
 export type ContactDetail = {
   readonly label: string;
-  readonly value: string;
-  readonly href?: string;
+  readonly value: Link | string;
 };
 
 export type Education = {

@@ -10,23 +10,31 @@ const cv: Cv = {
   contactDetails: [
     {
       label: "Email",
-      value: "ctorresmoral@gmail.com",
-      href: "mailto:ctorresmoral@gmail.com",
+      value: {
+        text: "ctorresmoral@gmail.com",
+        url: "mailto:ctorresmoral@gmail.com",
+      },
     },
     {
       label: "Phone",
-      value: "(+34) 644 320 094",
-      href: "tel:+34644320094",
+      value: {
+        text: "(+34) 644 320 094",
+        url: "tel:+34644320094",
+      },
     },
     {
       label: "GitHub",
-      value: "/carlostxrres",
-      href: "https://github.com/carlostxrres",
+      value: {
+        text: "/carlostxrres",
+        url: "https://github.com/carlostxrres",
+      },
     },
     {
       label: "LinkedIn",
-      value: "/carlostorrxs",
-      href: "https://www.linkedin.com/in/carlostorrxs",
+      value: {
+        text: "/carlostorrxs",
+        url: "https://www.linkedin.com/in/carlostorrxs",
+      },
     },
     {
       label: "Location",
@@ -193,8 +201,10 @@ const cv: Cv = {
     },
     {
       label: "English",
-      value: "C1 Advanced English (CAE)",
-      href: "https://github.com/carlostxrres/cv-carlos/blob/main/docs/cae-statement-of-result.pdf",
+      value: {
+        text: "C1 Advanced English (CAE)",
+        url: "https://github.com/carlostxrres/cv-carlos/blob/main/docs/cae-statement-of-result.pdf",
+      },
     },
   ],
   volunteering: [

@@ -11,10 +11,10 @@ defineProps<{
     <template v-for="(item, index) in details" :key="index">
       <dt>{{ item.label }}</dt>
       <dd>
-        <a v-if="item.href" :href="item.href" target="_blank">
-          {{ item.value }}
+        <span v-if="typeof item.value === 'string'">{{ item.value }}</span>
+        <a v-else :href="item.value.url" target="_blank">
+          {{ item.value.text }}
         </a>
-        <span v-else>{{ item.value }}</span>
       </dd>
     </template>
   </dl>

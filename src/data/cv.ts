@@ -203,7 +203,7 @@ const cv: Cv = {
       label: "English",
       value: {
         text: "C1 Advanced English (CAE)",
-        url: "https://github.com/carlostxrres/cv-carlos/blob/main/public/carlos-torres-cae.pdf",
+        url: "https://github.com/carlostxrres/cv/blob/main/public/carlos-torres-cae.pdf",
       },
     },
   ],

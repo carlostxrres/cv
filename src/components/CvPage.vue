@@ -35,12 +35,15 @@ const currentDate = new Date().toLocaleString("en-US", {
 </template>
 
 <style scoped>
+.page {
+  color: var(--color-text-1);
+}
+
 /* Wider than mobile: two columns */
 @media (width > 767px) {
   .page {
     display: grid;
     grid-template-columns: 45% auto;
-    color: var(--color-text-1);
   }
 }
 

@@ -40,7 +40,7 @@ const currentDate = new Date().toLocaleString("en-US", {
 }
 
 /* Wider than mobile: two columns */
-@media (width > 767px) {
+@media (width >= 768px) {
   .page {
     display: grid;
     grid-template-columns: 45% auto;
@@ -48,7 +48,7 @@ const currentDate = new Date().toLocaleString("en-US", {
 }
 
 /* Desktop: make it look like a printed page */
-@media (width > 1024px) {
+@media (width >= 1024px) {
   .page {
     max-width: 210mm;
     margin-block: 2rem;
@@ -94,7 +94,7 @@ const currentDate = new Date().toLocaleString("en-US", {
 }
 
 /* Desktop: show it fixed on top of the action bar */
-@media (width > 1024px) {
+@media (width >= 1024px) {
   .last-updated {
     position: fixed;
     right: 0;

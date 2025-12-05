@@ -38,7 +38,6 @@ const currentDate = new Date().toLocaleString("en-US", {
 /* Wider than mobile: two columns */
 @media (width > 767px) {
   .page {
-    position: relative;
     display: grid;
     grid-template-columns: 45% auto;
     color: var(--color-text-1);

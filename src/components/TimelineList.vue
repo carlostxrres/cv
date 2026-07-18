@@ -125,6 +125,7 @@ h3 {
 
 .time {
   margin-left: auto;
+  text-align: end;
   font-size: 0.6rem;
   flex-shrink: 0;
 }
@@ -135,6 +136,7 @@ h3 {
   display: flex;
   align-items: end;
   flex-direction: column;
+  flex-shrink: 0;
 }
 
 .certificated a {

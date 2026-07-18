@@ -5,8 +5,7 @@ const cv: Cv = {
   lastName: "Torres Moral",
   title: "CS Andon Cord Subject Matter Expert",
   aboutMe:
-    "Sole developer supporting an 80-person team at Amazon; designed, developed, and maintaining 31 production scripts that enhance web tools to improve operational efficiency. Performing data analysis and automating workflows to support daily operations.\n\n" /* + "My 3+ years of experience in IT have helped me develop a strong foundation in TypeScript, along with front-end and back-end frameworks.\n\n"*/ +
-    "I value the importance of clean code and design, and I am motivated by elegant logics and making a tangible impact for clients, all things that push me to continuously improve my skills.\n\nWith experience in research, policy analysis, data driven problem-solving, and cultural awareness from political science and Spanish teaching, I have thrived in diverse business environments from freelance, small businesses, and a global corporation.",
+    "Interdisciplinary professional bridging Political Science, education, and software development.\n\nFormer sole developer for an 80-person team at Amazon, building tools that automated workflows and drove data-based decisions.\n\nNow a Management Technician at Barcelona City Council's Education Department, applying a pragmatic, tech-driven approach to public policy and operations.",
   contactDetails: [
     {
       label: "Email",
@@ -132,11 +131,19 @@ const cv: Cv = {
   ],
   work: [
     {
+      title: "Management Technician",
+      institution: "Barcelona City Council",
+      period: "March 2026 - Now",
+      description: "",
+      bulletPoints: [],
+      tags: [],
+    },
+    {
       title: "CS Andon Cord Subject Matter Expert (L4)",
       institution: "Amazon",
-      period: "May 2025 - Now",
+      period: "May 2025 - March 2026",
       description:
-        "Building upon my previous role's responsibilities, my role has expanded to being part of the team's management.",
+        "Building upon my previous role's responsibilities, my role expanded to being part of the team's management.",
       bulletPoints: [
         "Responsible for monitoring the KPIs of an 80+ associates team.",
         "Automated 8 weekly reports about team productivity and quality.",

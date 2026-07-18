@@ -13,10 +13,10 @@
   --color-text-2: oklch(55% 0.005 var(--hue));
 
   /* Typography */
-  --font-head: "Montserrat";
-  --font-body: "Roboto";
-  --font-narrow: "Roboto Condensed";
-  --font-mono: "Roboto Mono";
+  --font-head: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  --font-narrow: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, Consolas, "Courier New", monospace;
 
   /* Spacing */
   --a-padding: 2px;

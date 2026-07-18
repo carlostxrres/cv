@@ -1,0 +1,39 @@
+/*
+  Paged media: real multi-page A4 output.
+  Must live in a global stylesheet — @page has no effect inside Vue scoped styles.
+*/
+
+@page {
+  size: A4;
+  /* Vertical margins so content never touches the page edge at page breaks.
+     Horizontal stays full-bleed: the 2.2rem side padding on .aside/.main
+     already provides the side breathing room.
+     Chromium leaves the margin area unpainted (white), so scripts/generate-pdf.mjs
+     paints the sidebar color into it afterwards — keep its MARGIN_MM in sync. */
+  margin: 10mm 0;
+}
+
+@media print {
+  /* Paint the page canvas itself (root background repeats on every page):
+     keeps the left column colored edge-to-edge even on pages where the
+     .aside content ends early. 45% matches .page's grid columns. */
+  html {
+    background: linear-gradient(to right, var(--color-main-4) 0 45%, white 45% 100%);
+    print-color-adjust: exact;
+  }
+
+  /* Keep each job/education entry on one page */
+  .timeline-list > li {
+    break-inside: avoid;
+  }
+
+  /* Never leave a heading orphaned at the bottom of a page */
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+
+  /* Contingency if the absolutely-positioned timeline connector line renders
+     only on the first page fragment when a list spans pages:
+     .timeline-list::before { display: none; } */
+}

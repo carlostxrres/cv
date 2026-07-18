@@ -23,7 +23,7 @@ const currentDate = new Date().toLocaleString("en-US", {
 
     <main class="main">
       <Work />
-      <Skills class="no-print" />
+      <Skills />
       <Languages />
       <!-- <Volunteering /> -->
     </main>
@@ -58,12 +58,10 @@ const currentDate = new Date().toLocaleString("en-US", {
   }
 }
 
-/* Print: adapt to real A4 */
+/* Print: let content flow; pagination is handled by print.css paged-media rules */
 @media print {
   .page {
-    aspect-ratio: 1 / sqrt(2);
-    overflow: hidden;
-    max-width: 54rem; /* adjust this to content */
+    max-width: 100%;
   }
 }
 
@@ -102,12 +100,11 @@ const currentDate = new Date().toLocaleString("en-US", {
   }
 }
 
-/* Print: show it fixed on the corner */
+/* Print: static flow after the last section (absolute/fixed misbehave across pages) */
 @media print {
   .last-updated {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    text-align: end;
+    padding: 0.5rem 1rem;
   }
 }
 </style>

@@ -9,7 +9,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pdf": "node scripts/generate-pdf.mjs",
+    "build:pdf": "run-s build pdf"
   },
   "dependencies": {
     "@fontsource/montserrat": "^5.2.8",
@@ -24,6 +26,8 @@
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.8.1",
     "npm-run-all2": "^8.0.4",
+    "pdf-lib": "^1.17.1",
+    "playwright": "^1.61.1",
     "typescript": "~5.9.0",
     "vite": "^7.1.11",
     "vue-tsc": "^3.1.1"

@@ -133,7 +133,7 @@ const cv: Cv = {
     {
       title: "Management Technician",
       institution: "Barcelona City Council",
-      period: "March 2026 - Now",
+      period: "Mar 2026 - Now",
       description: "",
       bulletPoints: [],
       tags: [],
@@ -141,7 +141,7 @@ const cv: Cv = {
     {
       title: "CS Andon Cord Subject Matter Expert (L4)",
       institution: "Amazon",
-      period: "May 2025 - March 2026",
+      period: "May 2025 - Mar 2026",
       description:
         "Building upon my previous role's responsibilities, my role expanded to being part of the team's management.",
       bulletPoints: [

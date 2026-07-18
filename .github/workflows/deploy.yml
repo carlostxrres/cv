@@ -24,7 +24,9 @@ jobs:
 
       - run: npm run pdf
 
-      - run: npx netlify-cli deploy --prod --dir=dist
+      # --no-build: the CLI otherwise re-runs the build, which empties dist/
+      # and deletes the PDF generated in the previous step
+      - run: npx netlify-cli deploy --prod --no-build --dir=dist
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

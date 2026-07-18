@@ -56,6 +56,18 @@ const cv: Cv = {
     },
     {
       institution: "Amazon Web Services (AWS)",
+      title: "AWS Certified AI Practitioner",
+      period: "Jan 2026",
+      link: {
+        text: "Certificate",
+        url: "https://www.credly.com/badges/a0efa725-f469-4aa8-93b9-94e6e78932e7/public_url",
+      },
+      description:
+        "Passed the exam AIF-C01, demonstrating knowledge in AI/ML fundamentals on AWS (generative AI, foundation models, ML concepts, responsible AI, security, and AWS AI/ML services such as Bedrock and SageMaker).",
+      tags: ["AI fundamentals", "AWS AI/ML"],
+    },
+    {
+      institution: "Amazon Web Services (AWS)",
       title: "AWS Certified Cloud Practitioner",
       period: "Nov 2024",
       link: {

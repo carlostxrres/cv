@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import ButtonAnchor from "@/components/ButtonAnchor.vue";
+import IconAnchor from "@/components/IconAnchor.vue";
 import { resumeGithub, resumePdfFor } from "@/data/urls";
 import { labels, lang } from "@/i18n";
 
@@ -9,8 +9,8 @@ const pdfHref = computed(() => resumePdfFor(lang.value));
 
 <template>
   <div class="actions-area">
-    <ButtonAnchor :label="labels.seeInGithub" :href="resumeGithub" icon="github" />
-    <ButtonAnchor :label="labels.seeAsPdf" :href="pdfHref" icon="pdf" />
+    <IconAnchor :label="labels.seeInGithub" :href="resumeGithub" icon="github" />
+    <IconAnchor :label="labels.seeAsPdf" :href="pdfHref" icon="pdf" />
   </div>
 </template>
 

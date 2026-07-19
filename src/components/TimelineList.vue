@@ -10,7 +10,7 @@ defineProps<{
 <template>
   <ul class="timeline-list">
     <li v-for="(item, index) in items" :key="index">
-      <header class="space-between">
+      <header>
         <div>
           <span v-if="item.institution" class="institution">
             {{ item.institution }}
@@ -131,6 +131,12 @@ h3 {
 
 /**/
 
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
 .header-end {
   display: flex;
   align-items: end;
@@ -172,13 +178,5 @@ h3 {
 
 ul .list-regular > li:not(:last-child) {
   margin-bottom: 0;
-}
-
-/**/
-
-.space-between {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
 }
 </style>

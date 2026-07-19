@@ -19,7 +19,6 @@
   --font-mono: "Roboto Mono", ui-monospace, Consolas, "Courier New", monospace;
 
   /* Spacing */
-  --a-padding: 2px;
   --border-radius: 4px;
 }
 
@@ -44,42 +43,38 @@ small {
   color: var(--color-text-2);
 }
 
-a {
-  --no-bg-bottom-space: 2px;
-  position: relative;
-  text-decoration: none;
-  background: linear-gradient(var(--color-main-transparent) 0%, var(--color-main-transparent) calc(100% - var(--no-bg-bottom-space)), transparent calc(100% - var(--no-bg-bottom-space)), transparent 100%);
-  transition: background-size 300ms ease;
+a,
+.a-like {
+  border-radius: var(--border-radius);
+  transition: background-size 150ms ease;
+  background: linear-gradient(var(--color-main-transparent) 0%,
+      var(--color-main-transparent) calc(100% - var(--no-bg-bottom-space)),
+      transparent calc(100% - var(--no-bg-bottom-space)),
+      transparent 100%);
   background-size: 100% 4px;
   background-position: 0 100%;
   background-repeat: no-repeat;
-  border-radius: var(--border-radius);
-  padding: var(--a-padding);
 }
 
-a:hover {
+a.active,
+a:hover,
+.a-like.active,
+.a-like:hover {
   background-size: 100% 100%;
+}
+
+a {
+  --no-bg-bottom-space: 2px;
+  padding: 2px;
+  text-decoration: none;
 }
 
 .a-like {
   --no-bg-bottom-space: 0px;
-  cursor: pointer;
   padding: 0.5rem 0.6rem;
+  cursor: pointer;
   font-size: 0.8rem;
   color: var(--color-text-2);
-  border: none;
-  border-radius: var(--border-radius);
-  transition: background-color 150ms ease;
-  background: linear-gradient(var(--color-main-transparent) 0%, var(--color-main-transparent) calc(100%), transparent calc(100%), transparent 100%);
-  background-size: 100% 4px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 300ms ease;
-}
-
-.a-like.active,
-.a-like:hover {
-  background-size: 100% 100%;
 }
 
 p {

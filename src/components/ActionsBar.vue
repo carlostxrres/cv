@@ -4,6 +4,7 @@ import ButtonAnchor from "@/components/ButtonAnchor.vue";
 import LangSwitcher from "@/components/LangSwitcher.vue";
 import { resumeGithub, resumePdfFor } from "@/data/urls";
 import { labels, lang } from "@/i18n";
+import ActionButtons from "@/components/ActionButtons.vue"
 
 const pdfHref = computed(() => resumePdfFor(lang.value));
 </script>
@@ -11,8 +12,7 @@ const pdfHref = computed(() => resumePdfFor(lang.value));
 <template>
   <div class="actions-bar no-print">
     <LangSwitcher />
-    <ButtonAnchor :label="labels.seeInGithub" :href="resumeGithub" icon="github" />
-    <ButtonAnchor :label="labels.seeAsPdf" :href="pdfHref" icon="pdf" />
+    <ActionButtons />
   </div>
 </template>
 
@@ -25,15 +25,6 @@ const pdfHref = computed(() => resumePdfFor(lang.value));
   border-top: 1px solid var(--color-main-3);
   padding: 0.3rem 0.5rem;
   display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-@media (width >= 343px) {
-  .actions-bar {
-    flex-direction: row;
-  }
+  justify-content: space-between;
 }
 </style>

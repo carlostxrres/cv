@@ -12,8 +12,15 @@ const ASIDE_RATIO = 0.45;
 // Chromium cannot paint backgrounds into the @page margin area, which would
 // leave white bands at the top and bottom of every page. Those areas are
 // guaranteed empty of content, so paint the sidebar color there directly.
+// The same pdf-lib pass also sets the document metadata.
 async function paintMarginBands(path, asideColor) {
   const doc = await PDFDocument.load(await readFile(path));
+
+  doc.setTitle("Carlos Torres — CV");
+  doc.setAuthor("Carlos Torres Moral");
+  doc.setSubject("CS Andon Cord Subject Matter Expert");
+  doc.setKeywords(["CV", "resume", "Carlos Torres", "software development"]);
+  doc.setLanguage("en");
   const marginPt = (MARGIN_MM / 25.4) * 72;
   const overlapPt = 2; // bleed into the content area to avoid hairline seams
 

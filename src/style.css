@@ -61,7 +61,6 @@ a:hover {
 
 p {
   margin-block: .3rem;
-  text-wrap: pretty;
 }
 
 p:first-child {
@@ -70,10 +69,6 @@ p:first-child {
 
 ul {
   margin-block: .3rem;
-}
-
-li {
-  text-wrap: pretty;
 }
 
 /* .inline-code {

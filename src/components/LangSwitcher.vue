@@ -30,7 +30,7 @@ button {
   font-size: 0.8rem;
   color: var(--color-text-2);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
 }
 
 button:hover {

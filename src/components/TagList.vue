@@ -30,7 +30,7 @@ defineProps<{
 .tags li {
   color: var(--color-main-2);
   padding: 0.2rem 0.4rem;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   background-color: var(--tag-color);
 }
 </style>

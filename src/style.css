@@ -20,6 +20,7 @@
 
   /* Spacing */
   --a-padding: 2px;
+  --border-radius: 4px;
 }
 
 body {
@@ -52,7 +53,7 @@ a {
   background-size: 100% 4px;
   background-position: 0 100%;
   background-repeat: no-repeat;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   padding: var(--a-padding);
 }
 

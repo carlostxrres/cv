@@ -23,7 +23,7 @@ defineProps<{
   padding: 0.5rem 1rem;
   font-size: 0.8rem;
   color: var(--color-text-2);
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   overflow: hidden;
 }
 

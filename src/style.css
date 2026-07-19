@@ -19,6 +19,7 @@
   --font-mono: "Roboto Mono", ui-monospace, Consolas, "Courier New", monospace;
 
   /* Spacing */
+  --a-padding: 2px;
   --border-radius: 4px;
 }
 
@@ -62,7 +63,7 @@ a:hover,
 }
 
 a {
-  padding: 2px 2px 0;
+  padding: var(--a-padding) var(--a-padding) 0;
   text-decoration: none;
 }
 

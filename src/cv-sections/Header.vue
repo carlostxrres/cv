@@ -33,12 +33,13 @@ import { cv, labels } from "@/i18n";
 
 .title {
   color: var(--color-main-2);
+  text-align: center;
 }
 
 h1 {
   font-family: var(--font-head);
   font-size: 1.5rem;
   font-weight: 200;
-  /* text-align: center; */
+  text-align: center;
 }
 </style>

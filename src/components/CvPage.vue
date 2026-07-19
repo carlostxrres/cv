@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import { labels } from "@/i18n";
+import { labels, lang } from "@/i18n";
+import { resumeWeb } from "@/data/urls";
 import Header from "@/cv-sections/Header.vue";
 import AboutMe from "@/cv-sections/AboutMe.vue";
 import Education from "@/cv-sections/Education.vue";
@@ -14,6 +15,9 @@ const lastUpdated = computed(() =>
     year: "numeric",
   }),
 );
+
+const latestVersionUrl = computed(() => `${resumeWeb}?lang=${lang.value}`);
+const displayUrl = resumeWeb.replace(/^https?:\/\//, "").replace(/\/$/, "");
 </script>
 
 <template>
@@ -34,7 +38,11 @@ const lastUpdated = computed(() =>
   </div>
 
   <div class="last-updated">
-    <small>{{ labels.lastUpdatedOn }} {{ lastUpdated }}</small>
+    <p>{{ labels.lastUpdatedOn }} {{ lastUpdated }}</p>
+    <p class="print-only">
+      {{ labels.latestVersionAt }}
+      <a :href="latestVersionUrl">{{ displayUrl }}</a>
+    </p>
   </div>
 </template>
 
@@ -93,6 +101,10 @@ const lastUpdated = computed(() =>
   color: var(--color-main-3);
   text-align: end;
   padding: 1rem;
+}
+
+.last-updated p {
+  margin-block: .5lh;
 }
 
 /* Desktop: show it fixed on top of the action bar */

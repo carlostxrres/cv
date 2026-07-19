@@ -78,8 +78,16 @@ ul {
   font-size: .8rem;
 } */
 
+.print-only {
+  display: none;
+}
+
 @media print {
   .no-print {
     display: none !important;
+  }
+
+  .print-only {
+    display: revert;
   }
 }

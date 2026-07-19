@@ -8,6 +8,8 @@ export type Labels = {
   readonly lastUpdatedOn: string;
   readonly seeInGithub: string;
   readonly seeAsPdf: string;
+  /** Print/PDF only; the online resume URL is appended */
+  readonly latestVersionAt: string;
   readonly pictureAlt: string;
   readonly sections: {
     readonly aboutMe: string;

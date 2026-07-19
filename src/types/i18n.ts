@@ -18,7 +18,6 @@ export type Labels = {
     readonly skills: string;
     readonly languages: string;
     readonly projects: string;
-    readonly projectsIntro: string;
     readonly volunteering: string;
   };
 };

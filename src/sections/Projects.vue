@@ -6,7 +6,6 @@ import TimelineList from "@/components/TimelineList.vue";
 
 <template>
   <CvSection :title="labels.sections.projects">
-    <p>{{ labels.sections.projectsIntro }}</p>
     <TimelineList :items="cv.projects" />
   </CvSection>
 </template>

@@ -2,7 +2,7 @@
 import type { Tag } from "@/types/cv";
 
 defineProps<{
-  tags: Tag[];
+  tags?: readonly Tag[];
 }>();
 </script>
 

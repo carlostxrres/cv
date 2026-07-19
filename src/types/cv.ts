@@ -57,3 +57,18 @@ export type Work = {
 };
 
 export type Tag = string;
+
+/**
+ * Common shape TimelineList renders. Education, Project, Volunteering and
+ * Work are all structurally assignable to it (extra fields stay optional).
+ */
+export type TimelineItem = {
+  readonly title: string;
+  readonly description: string;
+  readonly institution?: string;
+  readonly location?: string;
+  readonly period?: string;
+  readonly link?: Link;
+  readonly bulletPoints?: readonly string[];
+  readonly tags?: readonly Tag[];
+};

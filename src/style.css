@@ -48,10 +48,8 @@ a,
   border-radius: var(--border-radius);
   transition: background-size 150ms ease;
   background: linear-gradient(var(--color-main-transparent) 0%,
-      var(--color-main-transparent) calc(100% - var(--no-bg-bottom-space)),
-      transparent calc(100% - var(--no-bg-bottom-space)),
-      transparent 100%);
-  background-size: 100% 4px;
+      var(--color-main-transparent) 100%);
+  background-size: 100% 3px;
   background-position: 0 100%;
   background-repeat: no-repeat;
 }
@@ -64,13 +62,11 @@ a:hover,
 }
 
 a {
-  --no-bg-bottom-space: 2px;
-  padding: 2px;
+  padding: 2px 2px 0 2px;
   text-decoration: none;
 }
 
 .a-like {
-  --no-bg-bottom-space: 0px;
   padding: 0.5rem 0.6rem;
   cursor: pointer;
   font-size: 0.8rem;

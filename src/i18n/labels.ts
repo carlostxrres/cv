@@ -7,7 +7,7 @@ export const labels: Record<Lang, Labels> = {
     lastUpdatedOn: "Last updated on",
     seeInGithub: "GitHub",
     seeAsPdf: "PDF",
-    latestVersionAt: "See the latest version of this resume at",
+    latestVersionAt: "See the latest version at",
     pictureAlt: "Picture of Carlos Torres Moral",
     sections: {
       aboutMe: "About me",
@@ -26,7 +26,7 @@ export const labels: Record<Lang, Labels> = {
     lastUpdatedOn: "Darrera actualització:",
     seeInGithub: "GitHub",
     seeAsPdf: "PDF",
-    latestVersionAt: "Consulta la darrera versió d'aquest currículum a",
+    latestVersionAt: "Consulta la darrera versió a",
     pictureAlt: "Foto de Carlos Torres Moral",
     sections: {
       aboutMe: "Sobre mi",
@@ -45,7 +45,7 @@ export const labels: Record<Lang, Labels> = {
     lastUpdatedOn: "Última actualización:",
     seeInGithub: "GitHub",
     seeAsPdf: "PDF",
-    latestVersionAt: "Consulta la última versión de este currículum en",
+    latestVersionAt: "Consulta la última versión en",
     pictureAlt: "Foto de Carlos Torres Moral",
     sections: {
       aboutMe: "Sobre mí",

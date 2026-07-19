@@ -5,9 +5,11 @@ import { resumeWeb } from "@/data/urls";
 import Header from "@/sections/Header.vue";
 import AboutMe from "@/sections/AboutMe.vue";
 import Education from "@/sections/Education.vue";
+import Projects from "@/sections/Projects.vue";
 import Work from "@/sections/Work.vue";
 import Languages from "@/sections/Languages.vue";
 import Skills from "@/sections/Skills.vue";
+import Volunteering from "@/sections/Volunteering.vue";
 
 const lastUpdated = computed(() =>
   new Date(__BUILD_DATE__).toLocaleString(labels.value.dateLocale, {
@@ -26,14 +28,14 @@ const displayUrl = resumeWeb.replace(/^https?:\/\//, "").replace(/\/$/, "");
       <Header />
       <AboutMe />
       <Education />
-      <!-- <Projects /> -->
+      <Projects />
     </aside>
 
     <main class="main">
       <Work />
+      <Volunteering />
       <Skills />
       <Languages />
-      <!-- <Volunteering /> -->
     </main>
   </div>
 

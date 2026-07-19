@@ -69,7 +69,7 @@ h3 {
   position: relative;
   --padding-left: 1rem;
   --bullet-size: 0.6rem;
-  --translate-y: 0.3rem;
+  --translate-y: 0.25rem;
 }
 
 .timeline-list::before {

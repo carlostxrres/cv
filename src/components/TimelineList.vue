@@ -145,11 +145,6 @@ h3 {
   margin-right: calc(-1 * var(--a-padding));
 }
 
-dd.certificated {
-  flex-direction: revert;
-  justify-content: space-between;
-}
-
 /**/
 
 .list-regular {

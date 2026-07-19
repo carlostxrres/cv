@@ -1,12 +1,18 @@
 <script setup lang="ts">
+import { computed } from "vue";
 import ButtonAnchor from "@/components/ButtonAnchor.vue";
-import { resumeGithub, resumePdf } from "@/data/urls";
+import LangSwitcher from "@/components/LangSwitcher.vue";
+import { resumeGithub, resumePdfFor } from "@/data/urls";
+import { labels, lang } from "@/i18n";
+
+const pdfHref = computed(() => resumePdfFor(lang.value));
 </script>
 
 <template>
   <div class="actions-bar no-print">
-    <ButtonAnchor label="See in GitHub" :href="resumeGithub" icon="github" />
-    <ButtonAnchor label="See as PDF" :href="resumePdf" icon="pdf" />
+    <LangSwitcher />
+    <ButtonAnchor :label="labels.seeInGithub" :href="resumeGithub" icon="github" />
+    <ButtonAnchor :label="labels.seeAsPdf" :href="pdfHref" icon="pdf" />
   </div>
 </template>
 

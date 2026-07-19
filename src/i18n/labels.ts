@@ -1,0 +1,58 @@
+import type { Labels, Lang } from "@/types/i18n";
+
+export const labels: Record<Lang, Labels> = {
+  en: {
+    documentTitle: "Carlos Torres CV",
+    dateLocale: "en-US",
+    lastUpdatedOn: "Last updated on",
+    seeInGithub: "See in GitHub",
+    seeAsPdf: "See as PDF",
+    pictureAlt: "Picture of Carlos Torres Moral",
+    sections: {
+      aboutMe: "About me",
+      education: "Education",
+      work: "Work experience",
+      skills: "Hard skills",
+      languages: "Languages",
+      projects: "Projects",
+      projectsIntro: "These are some of my public projects:",
+      volunteering: "Volunteer experience",
+    },
+  },
+  ca: {
+    documentTitle: "CV de Carlos Torres",
+    dateLocale: "ca-ES",
+    lastUpdatedOn: "Darrera actualització:",
+    seeInGithub: "Veure a GitHub",
+    seeAsPdf: "Veure com a PDF",
+    pictureAlt: "Foto de Carlos Torres Moral",
+    sections: {
+      aboutMe: "Sobre mi",
+      education: "Formació",
+      work: "Experiència laboral",
+      skills: "Competències tècniques",
+      languages: "Idiomes",
+      projects: "Projectes",
+      projectsIntro: "Aquests són alguns dels meus projectes públics:",
+      volunteering: "Voluntariat",
+    },
+  },
+  es: {
+    documentTitle: "CV de Carlos Torres",
+    dateLocale: "es-ES",
+    lastUpdatedOn: "Última actualización:",
+    seeInGithub: "Ver en GitHub",
+    seeAsPdf: "Ver como PDF",
+    pictureAlt: "Foto de Carlos Torres Moral",
+    sections: {
+      aboutMe: "Sobre mí",
+      education: "Formación",
+      work: "Experiencia laboral",
+      skills: "Competencias técnicas",
+      languages: "Idiomas",
+      projects: "Proyectos",
+      projectsIntro: "Estos son algunos de mis proyectos públicos:",
+      volunteering: "Voluntariado",
+    },
+  },
+};

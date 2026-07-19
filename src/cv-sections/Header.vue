@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import cv from "@/data/cv";
+import { cv, labels } from "@/i18n";
 </script>
 
 <template>
   <div class="cv-header">
-    <img class="pic" src="/pic.jpg" :alt="`Picture of ${cv.name} ${cv.lastName}`" />
+    <img class="pic" src="/pic.jpg" :alt="labels.pictureAlt" />
 
     <div>
       <h1>{{ cv.name }} {{ cv.lastName }}</h1>

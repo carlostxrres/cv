@@ -1,7 +1,12 @@
 import { readFile } from "node:fs/promises";
 import { PDFDocument } from "pdf-lib";
 
-const EXPECTED_PDFS = ["dist/carlos-torres-cv.pdf"];
+const EXPECTED_PDFS = [
+  "dist/carlos-torres-cv.pdf",
+  "dist/carlos-torres-cv-en.pdf",
+  "dist/carlos-torres-cv-ca.pdf",
+  "dist/carlos-torres-cv-es.pdf",
+];
 const MIN_BYTES = 50_000;
 const MAX_PAGES = 4;
 

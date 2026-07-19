@@ -1,9 +1,17 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { copyFile, readFile, writeFile } from "node:fs/promises";
 import { preview } from "vite";
 import { chromium } from "playwright";
 import { PDFDocument, rgb } from "pdf-lib";
 
-const OUT = "dist/carlos-torres-cv.pdf";
+const LANGS = ["en", "ca", "es"];
+const LEGACY_OUT = "dist/carlos-torres-cv.pdf"; // English copy, kept for old links
+const outFor = (lang) => `dist/carlos-torres-cv-${lang}.pdf`;
+
+const METADATA = {
+  en: { title: "Carlos Torres — CV", subject: "CS Andon Cord Subject Matter Expert" },
+  ca: { title: "Carlos Torres — Currículum", subject: "CS Andon Cord Subject Matter Expert" },
+  es: { title: "Carlos Torres — Currículum", subject: "CS Andon Cord Subject Matter Expert" },
+};
 
 // Keep in sync with src/print.css: @page margin and .page grid columns
 const MARGIN_MM = 10;
@@ -13,14 +21,14 @@ const ASIDE_RATIO = 0.45;
 // leave white bands at the top and bottom of every page. Those areas are
 // guaranteed empty of content, so paint the sidebar color there directly.
 // The same pdf-lib pass also sets the document metadata.
-async function paintMarginBands(path, asideColor) {
+async function paintMarginBands(path, asideColor, lang) {
   const doc = await PDFDocument.load(await readFile(path));
 
-  doc.setTitle("Carlos Torres — CV");
+  doc.setTitle(METADATA[lang].title);
   doc.setAuthor("Carlos Torres Moral");
-  doc.setSubject("CS Andon Cord Subject Matter Expert");
+  doc.setSubject(METADATA[lang].subject);
   doc.setKeywords(["CV", "resume", "Carlos Torres", "software development"]);
-  doc.setLanguage("en");
+  doc.setLanguage(lang);
   const marginPt = (MARGIN_MM / 25.4) * 72;
   const overlapPt = 2; // bleed into the content area to avoid hairline seams
 
@@ -45,32 +53,41 @@ const url = server.resolvedUrls.local[0];
 
 const browser = await chromium.launch();
 const page = await browser.newPage();
-
-await page.goto(url, { waitUntil: "networkidle" });
-// Apply print styles first so print-only fonts (Roboto Condensed) get
-// requested, then wait for every font to finish loading.
+// Print styles must apply before waiting for fonts, so print-only fonts
+// (Roboto Condensed) get requested too. Emulation persists across gotos.
 await page.emulateMedia({ media: "print" });
-await page.evaluate(() => document.fonts.ready);
 
-// Resolve the sidebar's computed color to sRGB via a canvas, so the margin
-// bands always match whatever the CSS says (no hard-coded color to sync).
-const [r, g, b] = await page.evaluate(() => {
-  const color = getComputedStyle(document.querySelector(".aside")).backgroundColor;
-  const ctx = document.createElement("canvas").getContext("2d");
-  ctx.fillStyle = color;
-  ctx.fillRect(0, 0, 1, 1);
-  return [...ctx.getImageData(0, 0, 1, 1).data];
-});
+let asideColor;
 
-await page.pdf({
-  path: OUT,
-  format: "A4",
-  preferCSSPageSize: true,
-  printBackground: true,
-});
+for (const lang of LANGS) {
+  await page.goto(`${url}?lang=${lang}`, { waitUntil: "networkidle" });
+  await page.evaluate(() => document.fonts.ready);
+
+  // Resolve the sidebar's computed color to sRGB via a canvas, so the margin
+  // bands always match whatever the CSS says (no hard-coded color to sync).
+  asideColor ??= rgb(
+    ...(await page.evaluate(() => {
+      const color = getComputedStyle(document.querySelector(".aside")).backgroundColor;
+      const ctx = document.createElement("canvas").getContext("2d");
+      ctx.fillStyle = color;
+      ctx.fillRect(0, 0, 1, 1);
+      return [...ctx.getImageData(0, 0, 1, 1).data.slice(0, 3)];
+    })).map((v) => v / 255),
+  );
+
+  await page.pdf({
+    path: outFor(lang),
+    format: "A4",
+    preferCSSPageSize: true,
+    printBackground: true,
+  });
+
+  await paintMarginBands(outFor(lang), asideColor, lang);
+  console.log(`Wrote ${outFor(lang)}`);
+}
 
 await browser.close();
 await server.close();
 
-await paintMarginBands(OUT, rgb(r / 255, g / 255, b / 255));
-console.log(`Wrote ${OUT}`);
+await copyFile(outFor("en"), LEGACY_OUT);
+console.log(`Wrote ${LEGACY_OUT} (copy of en)`);

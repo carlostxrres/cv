@@ -1,13 +1,16 @@
 <script setup lang="ts">
-import cv from "@/data/cv";
+import { computed } from "vue";
+import { cv, labels } from "@/i18n";
 import CvSection from "@/components/CvSection.vue";
 import DetailsList from "@/components/DetailsList.vue";
 
-const aboutMeParagraphs = cv.aboutMe.split("\n\n").filter((p) => p.trim());
+const aboutMeParagraphs = computed(() =>
+  cv.value.aboutMe.split("\n\n").filter((p) => p.trim()),
+);
 </script>
 
 <template>
-  <CvSection title="About me">
+  <CvSection :title="labels.sections.aboutMe">
     <div>
       <p v-for="(paragraph, index) in aboutMeParagraphs" :key="index">
         {{ paragraph }}

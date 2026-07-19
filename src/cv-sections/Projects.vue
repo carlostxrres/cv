@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import cv from "@/data/cv";
+import { cv, labels } from "@/i18n";
 import CvSection from "@/components/CvSection.vue";
 import TimelineList from "@/components/TimelineList.vue";
 </script>
 
 <template>
-  <CvSection title="Projects">
-    <p>These are some of my public projects:</p>
+  <CvSection :title="labels.sections.projects">
+    <p>{{ labels.sections.projectsIntro }}</p>
     <TimelineList :items="cv.projects" />
   </CvSection>
 </template>

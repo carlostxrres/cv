@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { computed } from "vue";
+import { labels } from "@/i18n";
 import Header from "@/cv-sections/Header.vue";
 import AboutMe from "@/cv-sections/AboutMe.vue";
 import Education from "@/cv-sections/Education.vue";
@@ -6,10 +8,12 @@ import Work from "@/cv-sections/Work.vue";
 import Languages from "@/cv-sections/Languages.vue";
 import Skills from "@/cv-sections/Skills.vue";
 
-const lastUpdated = new Date(__BUILD_DATE__).toLocaleString("en-US", {
-  month: "long",
-  year: "numeric",
-});
+const lastUpdated = computed(() =>
+  new Date(__BUILD_DATE__).toLocaleString(labels.value.dateLocale, {
+    month: "long",
+    year: "numeric",
+  }),
+);
 </script>
 
 <template>
@@ -30,7 +34,7 @@ const lastUpdated = new Date(__BUILD_DATE__).toLocaleString("en-US", {
   </div>
 
   <div class="last-updated">
-    <small>Last updated on {{ lastUpdated }}</small>
+    <small>{{ labels.lastUpdatedOn }} {{ lastUpdated }}</small>
   </div>
 </template>
 

@@ -10,20 +10,20 @@ defineProps<{
 </script>
 
 <template>
-  <a target="_blank" class="button-icon a-like" :href="href">
+  <a target="_blank" class="a-like" :href="href">
     <IconComponent :icon="icon" />
     <span>{{ label }}</span>
   </a>
 </template>
 
 <style scoped>
-.button-icon {
+a {
   display: flex;
   align-items: center;
   gap: 0.4rem;
 }
 
-.button-icon svg {
+a svg {
   color: var(--color-main-2);
 }
 </style>

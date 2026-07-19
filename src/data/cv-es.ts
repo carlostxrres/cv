@@ -3,7 +3,7 @@ import { type Cv } from "@/types/cv";
 const cv: Cv = {
   name: "Carlos",
   lastName: "Torres Moral",
-  title: "CS Andon Cord Subject Matter Expert",
+  title: "Técnico Superior de Gestión",
   aboutMe:
     "Profesional interdisciplinar que une la ciencia política, la educación y el desarrollo de software.\n\nAnteriormente, único desarrollador para un equipo de 80 personas en Amazon, creando herramientas que automatizaban flujos de trabajo e impulsaban decisiones basadas en datos.\n\nActualmente, técnico de gestión en el área de Educación del Ayuntamiento de Barcelona, aplicando un enfoque pragmático y tecnológico a las políticas públicas y las operaciones.",
   contactDetails: [

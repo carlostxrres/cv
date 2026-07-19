@@ -3,7 +3,7 @@ import { type Cv } from "@/types/cv";
 const cv: Cv = {
   name: "Carlos",
   lastName: "Torres Moral",
-  title: "CS Andon Cord Subject Matter Expert",
+  title: "Managament Technician",
   aboutMe:
     "Interdisciplinary professional bridging Political Science, education, and software development.\n\nFormer sole developer for an 80-person team at Amazon, building tools that automated workflows and drove data-based decisions.\n\nNow a Management Technician at Barcelona City Council's Education Department, applying a pragmatic, tech-driven approach to public policy and operations.",
   contactDetails: [

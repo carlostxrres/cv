@@ -6,7 +6,7 @@ import Work from "@/cv-sections/Work.vue";
 import Languages from "@/cv-sections/Languages.vue";
 import Skills from "@/cv-sections/Skills.vue";
 
-const currentDate = new Date().toLocaleString("en-US", {
+const lastUpdated = new Date(__BUILD_DATE__).toLocaleString("en-US", {
   month: "long",
   year: "numeric",
 });
@@ -30,7 +30,7 @@ const currentDate = new Date().toLocaleString("en-US", {
   </div>
 
   <div class="last-updated">
-    <small>Last updated on {{ currentDate }}</small>
+    <small>Last updated on {{ lastUpdated }}</small>
   </div>
 </template>
 

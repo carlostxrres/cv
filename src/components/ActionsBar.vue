@@ -8,8 +8,8 @@ const pdfHref = computed(() => resumePdfFor(lang.value));
 </script>
 
 <template>
-  <div class="actions-bar no-print">
-    <div class="actions-bar-section" role="group" aria-label="Language">
+  <div class="toolbar no-print">
+    <div class="toolbar-section" role="group" aria-label="Language">
       <button
         v-for="option in LANGS"
         :key="option"
@@ -23,7 +23,7 @@ const pdfHref = computed(() => resumePdfFor(lang.value));
       </button>
     </div>
 
-    <div class="actions-bar-section" role="group" aria-label="Actions">
+    <div class="toolbar-section" role="group" aria-label="Actions">
       <IconAnchor :label="labels.seeInGithub" :href="resumeGithub" icon="github" />
       <IconAnchor :label="labels.seeAsPdf" :href="pdfHref" icon="pdf" />
     </div>
@@ -31,7 +31,7 @@ const pdfHref = computed(() => resumePdfFor(lang.value));
 </template>
 
 <style scoped>
-.actions-bar {
+.toolbar {
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
@@ -43,13 +43,13 @@ const pdfHref = computed(() => resumePdfFor(lang.value));
   gap: 1rem;
 }
 
-.actions-bar-section {
+.toolbar-section {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-.actions-bar-section:last-child {
+.toolbar-section:last-child {
   justify-content: end;
 }
 

@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import CvPage from "@/components/CvPage.vue";
-import ActionsBar from "@/components/ActionsBar.vue";
+import ToolBar from "@/components/ToolBar.vue";
 </script>
 
 <template>
   <CvPage />
-  <ActionsBar />
+  <ToolBar />
 </template>

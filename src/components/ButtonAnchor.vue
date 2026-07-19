@@ -10,23 +10,13 @@ defineProps<{
 </script>
 
 <template>
-  <a target="_blank" class="button-anchor button-icon" :href="href">
+  <a target="_blank" class="button-icon a-like" :href="href">
     <IconComponent :icon="icon" />
     <span>{{ label }}</span>
   </a>
 </template>
 
 <style scoped>
-.button-anchor {
-  --no-bg-bottom-space: 0px;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  font-size: 0.8rem;
-  color: var(--color-text-2);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-}
-
 .button-icon {
   display: flex;
   align-items: center;

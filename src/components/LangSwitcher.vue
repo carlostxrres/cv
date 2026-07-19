@@ -9,6 +9,7 @@ import { LANGS, lang, setLang } from "@/i18n";
       :key="option"
       type="button"
       :aria-pressed="option === lang"
+      class="a-like"
       :class="{ active: option === lang }"
       @click="setLang(option)"
     >
@@ -22,19 +23,6 @@ import { LANGS, lang, setLang } from "@/i18n";
   display: flex;
   gap: .5rem;
   flex-wrap: wrap;
-}
-
-button {
-  cursor: pointer;
-  padding: 0.5rem 0.6rem;
-  font-size: 0.8rem;
-  color: var(--color-text-2);
-  border: none;
-  border-radius: var(--border-radius);
-}
-
-button:hover {
-  background-color: var(--color-main-transparent);
 }
 
 button.active {

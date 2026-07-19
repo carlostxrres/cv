@@ -5,17 +5,17 @@ const cv: Cv = {
   lastName: "Torres Moral",
   title: "CS Andon Cord Subject Matter Expert",
   aboutMe:
-    "Interdisciplinary professional bridging Political Science, education, and software development.\n\nFormer sole developer for an 80-person team at Amazon, building tools that automated workflows and drove data-based decisions.\n\nNow a Management Technician at Barcelona City Council's Education Department, applying a pragmatic, tech-driven approach to public policy and operations.",
+    "Profesional interdisciplinar que une la ciencia política, la educación y el desarrollo de software.\n\nAnteriormente, único desarrollador para un equipo de 80 personas en Amazon, creando herramientas que automatizaban flujos de trabajo e impulsaban decisiones basadas en datos.\n\nActualmente, técnico de gestión en el área de Educación del Ayuntamiento de Barcelona, aplicando un enfoque pragmático y tecnológico a las políticas públicas y las operaciones.",
   contactDetails: [
     {
-      label: "Email",
+      label: "Correo",
       value: {
         text: "ctorresmoral@gmail.com",
         url: "mailto:ctorresmoral@gmail.com",
       },
     },
     {
-      label: "Phone",
+      label: "Teléfono",
       value: {
         text: "(+34) 644 320 094",
         url: "tel:+34644320094",
@@ -36,104 +36,104 @@ const cv: Cv = {
       },
     },
     {
-      label: "Location",
+      label: "Ubicación",
       value: "Barcelona",
     },
   ],
   education: [
     {
       institution: "Ironhack",
-      title: "Data Analytics Course",
-      period: "Nov 2024 - Dec 2024",
+      title: "Curso de Data Analytics",
+      period: "Nov 2024 - Dic 2024",
       link: {
-        text: "Certificate",
+        text: "Certificado",
         url: "https://www.credential.net/fd65c6e8-e80c-411b-afbc-36eb6573550b",
       },
       description:
-        "Completed a 60-hour course on Data Analytics, focusing on SQL for data querying and Python with Pandas and NumPy for data manipulation and analysis.",
+        "Curso de 60 horas sobre análisis de datos, centrado en SQL para la consulta de datos y Python con Pandas y NumPy para la manipulación y el análisis de datos.",
       tags: ["MySQL", "Python", "Pandas", "NumPy"],
     },
     {
       institution: "Amazon Web Services (AWS)",
       title: "AWS Certified AI Practitioner",
-      period: "Jan 2026",
+      period: "Ene 2026",
       link: {
-        text: "Certificate",
+        text: "Certificado",
         url: "https://www.credly.com/badges/a0efa725-f469-4aa8-93b9-94e6e78932e7/public_url",
       },
       description:
-        "Passed the exam AIF-C01, demonstrating knowledge in AI/ML fundamentals on AWS (generative AI, foundation models, ML concepts, responsible AI, security, and AWS AI/ML services such as Bedrock and SageMaker).",
-      tags: ["AI fundamentals", "AWS AI/ML"],
+        "Superación del examen AIF-C01, que acredita conocimientos de los fundamentos de IA/ML en AWS (IA generativa, modelos fundacionales, conceptos de ML, IA responsable, seguridad y servicios de IA/ML de AWS como Bedrock y SageMaker).",
+      tags: ["Fundamentos de IA", "AWS AI/ML"],
     },
     {
       institution: "Amazon Web Services (AWS)",
       title: "AWS Certified Cloud Practitioner",
       period: "Nov 2024",
       link: {
-        text: "Certificate",
+        text: "Certificado",
         url: "https://www.credly.com/badges/59dd83b5-d3ad-4229-b7fa-e0c584d7e170/public_url",
       },
       description:
-        "Passed the exam CLF-C02, demonstrating knowledge in cloud and AWS fundamentals (core services, infrastructure, networking, security, monitoring, pricing, support, migration).",
-      tags: ["Cloud fundamentals", "AWS fundamentals"],
+        "Superación del examen CLF-C02, que acredita conocimientos de los fundamentos de la nube y de AWS (servicios principales, infraestructura, redes, seguridad, monitorización, precios, soporte y migración).",
+      tags: ["Fundamentos de cloud", "Fundamentos de AWS"],
     },
     {
       institution: "Ironhack",
-      title: "Web Front-End Bootcamp",
+      title: "Bootcamp de front-end web",
       period: "Mar 2024 - Jul 2024",
       link: {
-        text: "Certificate",
+        text: "Certificado",
         url: "https://www.credential.net/a0ba9540-bf26-4ab8-b125-11f51187ed00",
       },
-      description: "Completed a front-end bootcamp focused on Vue 3.",
+      description: "Bootcamp de desarrollo front-end centrado en Vue 3.",
       tags: ["Vue.js", "JavaScript", "HTML", "CSS", "Git"],
     },
     {
       institution: "Ironhack",
-      title: "Web Back-End Bootcamp",
+      title: "Bootcamp de back-end web",
       period: "Feb 2023 - Jun 2023",
       link: {
-        text: "Certificate",
+        text: "Certificado",
         url: "https://www.credential.net/ffaa5321-123d-4963-bff8-159456a2cde0",
       },
       description:
-        "Ventured into back-end development and built a real estate REST API, acquiring knowledge of the controller, service, repository, and data layers.",
+        "Iniciación al desarrollo back-end con la construcción de una API REST inmobiliaria, adquiriendo conocimientos de las capas de controlador, servicio, repositorio y datos.",
       tags: ["Java", "Spring Boot", "Maven", "JPA", "MySQL", "Git"],
     },
     {
       institution: "Universitat Autònoma de Barcelona",
-      title: "Bachelor's Degree in Political Science and Public Management",
+      title: "Grado en Ciencia Política y Gestión Pública",
       period: "Sep 2012 - Jul 2017",
-      description: "Specialization in International Relations.",
+      description: "Especialización en Relaciones Internacionales.",
     },
   ],
   projects: [
     {
       title: "Text-to-HTML",
       description:
-        "HTML WYSIWYG editor allowing users to save and load templates.",
+        "Editor WYSIWYG de HTML que permite guardar y cargar plantillas.",
       tags: ["React", "JavaScript", "AWS S3", "AWS Route 53"],
       link: {
-        text: "See in GitHub",
+        text: "Ver en GitHub",
         url: "https://github.com/carlostxrres/text-to-html",
       },
     },
     {
       title: "Keyglow",
       description:
-        "Web app to communicate key combinations by generating images of a keyboard with highlighted keys.",
+        "Aplicación web para comunicar combinaciones de teclas generando imágenes de un teclado con las teclas resaltadas.",
       tags: ["React", "JavaScript", "SCSS"],
       link: {
-        text: "See in GitHub",
+        text: "Ver en GitHub",
         url: "https://github.com/carlostxrres/keyglow",
       },
     },
   ],
   work: [
     {
-      title: "Management Technician",
-      institution: "Barcelona City Council",
-      period: "Mar 2026 - Now",
+      title: "Técnico de gestión",
+      institution: "Ayuntamiento de Barcelona",
+      period: "Mar 2026 - Actualidad",
       description: "",
       bulletPoints: [],
       tags: [],
@@ -143,40 +143,38 @@ const cv: Cv = {
       institution: "Amazon",
       period: "May 2025 - Mar 2026",
       description:
-        "Building upon my previous role's responsibilities, my role expanded to being part of the team's management.",
+        "Partiendo de las responsabilidades de mi puesto anterior, mi papel se amplió para formar parte de la gestión del equipo.",
       bulletPoints: [
-        "Responsible for monitoring the KPIs of an 80+ associates team.",
-        "Automated 8 weekly reports about team productivity and quality.",
-        "Analyzing data for ad-hoc deep dives.",
-        "Mentoring a junior developer.",
-        "Providing technical consultation to several teams.",
-        "Maintaining 31 production userscripts with 90+ users each.",
-        // process improvement, operational procedures, launches
-        // complete projects within given timelines
+        "Responsable del seguimiento de los KPI de un equipo de más de 80 personas.",
+        "Automatización de 8 informes semanales sobre la productividad y la calidad del equipo.",
+        "Análisis de datos para estudios ad hoc.",
+        "Mentoría de un desarrollador júnior.",
+        "Consultoría técnica para varios equipos.",
+        "Mantenimiento de 31 userscripts en producción con más de 90 usuarios cada uno.",
       ],
       tags: [
         "TypeScript",
         "Node.js",
-        "Data Analytics",
-        "Mentorship",
-        "Project management",
-        "Stakeholder management",
+        "Análisis de datos",
+        "Mentoría",
+        "Gestión de proyectos",
+        "Gestión de stakeholders",
       ],
     },
     {
       title: "CS Andon Cord Associate (L3)",
       institution: "Amazon",
-      period: "Jan 2022 - May 2025",
+      period: "Ene 2022 - May 2025",
       description:
-        "Researched customer inquiries and inventory discrepancies to identify root causes of customer dissatisfaction peaks and ensure the accuracy of product data, liaising with internal warehouses and external vendors. In early 2023, became the solo full-time front-end developer in the team.",
+        "Investigación de consultas de clientes y discrepancias de inventario para identificar las causas de los picos de insatisfacción y garantizar la exactitud de los datos de producto, en coordinación con almacenes internos y proveedores externos. A principios de 2023 me convertí en el único desarrollador front-end a tiempo completo del equipo.",
       bulletPoints: [
-        "Led process-improvement initiatives that leveraged internal Amazon APIs to drive efficiency by automating manual work.",
-        'Designed systems such as "Support Requests" and "Quality Audits" with 29,000+ and 13,000+ items processed in the first two years.',
-        "Served as primary tech contact in the team.",
+        "Lideré iniciativas de mejora de procesos que aprovechaban APIs internas de Amazon para ganar eficiencia automatizando trabajo manual.",
+        'Diseñé sistemas como "Support Requests" y "Quality Audits", con más de 29.000 y 13.000 elementos procesados durante los dos primeros años.',
+        "Referente técnico principal del equipo.",
       ],
       tags: [
-        "Analytical skills",
-        "Team work",
+        "Capacidad analítica",
+        "Trabajo en equipo",
         "JavaScript",
         "Node.js",
         "Vue.js",
@@ -186,40 +184,40 @@ const cv: Cv = {
       ],
     },
     {
-      title: "Spanish Teacher",
-      institution: "Freelance",
-      period: "Jul 2019 - Jan 2022",
+      title: "Profesor de español",
+      institution: "Autónomo",
+      period: "Jul 2019 - Ene 2022",
       description:
-        'Taught Spanish courses in-person and online, adapting strategies for all levels. Developed business Spanish courses themed around SCRUM for a French digital company and coached managers and professionals in Barcelona (reviews available at <a target="_blank" href="https://www.apprentus.com/in/carlostorres">Apprentus</a>).',
-      tags: ["Client management", "Instructional design"],
+        'Cursos de español presenciales y en línea, adaptando las estrategias a todos los niveles. Desarrollé cursos de español de negocios basados en SCRUM para una empresa digital francesa y formé a directivos y profesionales en Barcelona (reseñas disponibles en <a target="_blank" href="https://www.apprentus.com/in/carlostorres">Apprentus</a>).',
+      tags: ["Gestión de clientes", "Diseño instruccional"],
     },
     {
-      title: "Academic Intern",
+      title: "Becario académico",
       institution: "Atlas Language School",
-      location: "Dublin",
+      location: "Dublín",
       period: "Jun 2018 - Sep 2018",
       description:
-        "Improved efficiency of student feedback quantitative and qualitative analysis by designing spreadsheets ad hoc, and provided administrative support within the Academic Department of the school.",
+        "Mejora de la eficiencia del análisis cuantitativo y cualitativo del feedback de los estudiantes mediante el diseño de hojas de cálculo ad hoc, y apoyo administrativo en el Departamento Académico de la escuela.",
     },
     {
-      title: "Research Trainee",
+      title: "Investigador en prácticas",
       institution: "Institut de Ciències Polítiques i Socials",
-      period: "Oct 2015 - Apr 2016",
+      period: "Oct 2015 - Abr 2016",
       description:
-        'Support for the <a target="_blank" href="http://www.icps.cat/archivos/APC/anuari2015.pdf">"Anuari Polític de Catalunya" report of 2015</a> (mark: A). My tasks included summary of legal texts, elaboration of databases and electoral data treatment, follow-up of government activity, and press research.',
+        'Apoyo al <a target="_blank" href="http://www.icps.cat/archivos/APC/anuari2015.pdf">"Anuari Polític de Catalunya" de 2015</a> (nota: A). Mis tareas incluían el resumen de textos legales, la elaboración de bases de datos y el tratamiento de datos electorales, el seguimiento de la actividad de gobierno y la investigación de prensa.',
     },
   ],
   languages: [
     {
-      label: "Spanish",
-      value: "Native",
+      label: "Español",
+      value: "Nativo",
     },
     {
-      label: "Catalan",
-      value: "Native",
+      label: "Catalán",
+      value: "Nativo",
     },
     {
-      label: "English",
+      label: "Inglés",
       value: {
         text: "C1 Advanced English (CAE)",
         url: "https://github.com/carlostxrres/cv/blob/main/public/carlos-torres-cae.pdf",
@@ -228,19 +226,19 @@ const cv: Cv = {
   ],
   volunteering: [
     {
-      title: "Volunteer",
+      title: "Voluntario",
       institution: "WWOOF",
-      location: "United Kingdom",
-      period: "Jul 2016 - Aug 2016",
+      location: "Reino Unido",
+      period: "Jul 2016 - Ago 2016",
       description:
-        "Worked with two organic farms and social service providers for disabled people in Malmesbury and Chedington.",
+        "Colaboración con dos granjas ecológicas y entidades de servicios sociales para personas con discapacidad en Malmesbury y Chedington.",
     },
     {
-      title: "Boy Scout",
+      title: "Scout",
       institution: "Acció Escolta",
-      period: "Sep 2000 - Aug 2013",
+      period: "Sep 2000 - Ago 2013",
       description:
-        "Growing up as a scout, I have internalized certain values and I have assumed several civil and educational responsibilities. I have also been in charge of 6 to 18 year old children.",
+        "Crecer como scout me ha hecho interiorizar ciertos valores y asumir varias responsabilidades cívicas y educativas. También he sido responsable de niños y jóvenes de 6 a 18 años.",
     },
   ],
   skills: [
@@ -258,9 +256,5 @@ const cv: Cv = {
     "Git",
   ],
 };
-
-// Prizes:
-// - "Earned a RISE 'Customer Obsession' award (with 3 recipients in SPS worldwide, where I had the most nominations in AEMENA's 661 nominees)",
-// - "Earned 2 GEM (Go the Extra Mile) awards.",
 
 export default cv;

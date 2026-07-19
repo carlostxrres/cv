@@ -44,9 +44,10 @@ small {
 }
 
 a {
+  --no-bg-bottom-space: 2px;
   position: relative;
   text-decoration: none;
-  background: linear-gradient(var(--color-main-transparent) 0%, var(--color-main-transparent) calc(100% - 2px), transparent calc(100% - 2px), transparent 100%);
+  background: linear-gradient(var(--color-main-transparent) 0%, var(--color-main-transparent) calc(100% - var(--no-bg-bottom-space)), transparent calc(100% - var(--no-bg-bottom-space)), transparent 100%);
   transition: background-size 300ms ease;
   background-size: 100% 4px;
   background-position: 0 100%;

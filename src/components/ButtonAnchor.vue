@@ -18,6 +18,7 @@ defineProps<{
 
 <style scoped>
 .button-anchor {
+  --no-bg-bottom-space: 0px;
   cursor: pointer;
   padding: 0.5rem 1rem;
   font-size: 0.8rem;

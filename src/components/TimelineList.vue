@@ -23,7 +23,7 @@ defineProps<{
           </h3>
         </div>
 
-        <div v-if="item.period || item.link" class="certificated">
+        <div v-if="item.period || item.link" class="header-end">
           <span class="time">
             {{ item.period }}
           </span>
@@ -131,14 +131,14 @@ h3 {
 
 /**/
 
-.certificated {
+.header-end {
   display: flex;
   align-items: end;
   flex-direction: column;
   flex-shrink: 0;
 }
 
-.certificated a {
+.header-end a {
   font-size: 0.6rem;
   color: var(--color-main-3);
   text-transform: uppercase;

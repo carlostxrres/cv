@@ -2,12 +2,12 @@
 import { computed } from "vue";
 import { labels, lang } from "@/i18n";
 import { resumeWeb } from "@/data/urls";
-import Header from "@/cv-sections/Header.vue";
-import AboutMe from "@/cv-sections/AboutMe.vue";
-import Education from "@/cv-sections/Education.vue";
-import Work from "@/cv-sections/Work.vue";
-import Languages from "@/cv-sections/Languages.vue";
-import Skills from "@/cv-sections/Skills.vue";
+import Header from "@/sections/Header.vue";
+import AboutMe from "@/sections/AboutMe.vue";
+import Education from "@/sections/Education.vue";
+import Work from "@/sections/Work.vue";
+import Languages from "@/sections/Languages.vue";
+import Skills from "@/sections/Skills.vue";
 
 const lastUpdated = computed(() =>
   new Date(__BUILD_DATE__).toLocaleString(labels.value.dateLocale, {

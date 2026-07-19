@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { TimelineItem } from "@/types/cv";
 import TagList from "@/components/TagList.vue";
+import TimelineListHeader from "@/components/TimelineListHeader.vue";
+import TimelineListBulletList from "@/components/TimelineListBulletList.vue";
 
 defineProps<{
   items: readonly TimelineItem[];
@@ -10,43 +12,20 @@ defineProps<{
 <template>
   <ul class="timeline-list">
     <li v-for="(item, index) in items" :key="index">
-      <header>
-        <div>
-          <span v-if="item.institution" class="institution">
-            {{ item.institution }}
-          </span>
-          <span v-if="item.location" class="location">
-            {{ item.location }}
-          </span>
-          <h3>
-            {{ item.title }}
-          </h3>
-        </div>
-
-        <div v-if="item.period || item.link" class="header-end">
-          <span class="time">
-            {{ item.period }}
-          </span>
-
-          <a v-if="item.link" :href="item.link.url" target="_blank">
-            {{ item.link.text }}
-          </a>
-        </div>
-      </header>
+      <TimelineListHeader
+        :institution="item.institution"
+        :location="item.location"
+        :title="item.title"
+        :period="item.period"
+        :link="item.link"
+      />
 
       <p v-if="item.description" v-html="item.description" />
 
-      <ul
+      <TimelineListBulletList
         v-if="item.bulletPoints && item.bulletPoints.length"
-        class="list-regular list-condensed"
-      >
-        <li
-          v-for="(bulletPoint, bulletPointIndex) in item.bulletPoints"
-          :key="bulletPointIndex"
-        >
-          {{ bulletPoint }}
-        </li>
-      </ul>
+        :bulletPoints="item.bulletPoints"
+      />
 
       <TagList :tags="item.tags" />
     </li>
@@ -54,15 +33,6 @@ defineProps<{
 </template>
 
 <style scoped>
-h3 {
-  /* font-family: var(--font-head); */
-  font-family: var(--font-body);
-  font-weight: bold;
-  color: var(--color-main);
-}
-
-/**/
-
 .timeline-list {
   list-style: circle none outside;
   padding-left: 1rem;
@@ -94,89 +64,5 @@ h3 {
 
 .timeline-list > li:not(:last-child) {
   margin-bottom: 1rem;
-}
-
-/**/
-
-.institution,
-.location,
-.time {
-  font-family: var(--font-body);
-  color: var(--color-main-2);
-}
-
-.institution,
-.location {
-  font-size: 0.7rem;
-}
-
-.institution {
-  font-weight: bold;
-}
-
-.location::before {
-  content: " (";
-}
-
-.location::after {
-  content: ")";
-}
-
-.time {
-  margin-left: auto;
-  text-align: end;
-  font-size: 0.6rem;
-  flex-shrink: 0;
-}
-
-/**/
-
-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.header-end {
-  display: flex;
-  align-items: end;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-
-.header-end a {
-  font-size: 0.6rem;
-  color: var(--color-main-3);
-  text-transform: uppercase;
-  margin-right: calc(-1 * var(--a-padding));
-}
-
-/**/
-
-.list-regular {
-  list-style: disc none outside;
-  list-style-type: disc;
-  padding-left: var(--padding-left);
-  --padding-left: 1rem;
-  --translate-y: 0.4rem;
-}
-
-.list-regular > li::before {
-  content: "";
-  position: absolute;
-  width: 0.3rem;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: none;
-  background-color: var(--color-main);
-  transform: translate(calc(-0.8 * var(--padding-left)), var(--translate-y));
-}
-
-.list-regular > li:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
-ul .list-regular > li:not(:last-child) {
-  margin-bottom: 0;
 }
 </style>

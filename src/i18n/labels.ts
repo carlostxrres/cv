@@ -5,8 +5,8 @@ export const labels: Record<Lang, Labels> = {
     documentTitle: "Carlos Torres CV",
     dateLocale: "en-US",
     lastUpdatedOn: "Last updated on",
-    seeInGithub: "See in GitHub",
-    seeAsPdf: "See as PDF",
+    seeInGithub: "GitHub",
+    seeAsPdf: "PDF",
     pictureAlt: "Picture of Carlos Torres Moral",
     sections: {
       aboutMe: "About me",
@@ -23,8 +23,8 @@ export const labels: Record<Lang, Labels> = {
     documentTitle: "CV de Carlos Torres",
     dateLocale: "ca-ES",
     lastUpdatedOn: "Darrera actualització:",
-    seeInGithub: "Veure a GitHub",
-    seeAsPdf: "Veure com a PDF",
+    seeInGithub: "GitHub",
+    seeAsPdf: "PDF",
     pictureAlt: "Foto de Carlos Torres Moral",
     sections: {
       aboutMe: "Sobre mi",
@@ -41,8 +41,8 @@ export const labels: Record<Lang, Labels> = {
     documentTitle: "CV de Carlos Torres",
     dateLocale: "es-ES",
     lastUpdatedOn: "Última actualización:",
-    seeInGithub: "Ver en GitHub",
-    seeAsPdf: "Ver como PDF",
+    seeInGithub: "GitHub",
+    seeAsPdf: "PDF",
     pictureAlt: "Foto de Carlos Torres Moral",
     sections: {
       aboutMe: "Sobre mí",

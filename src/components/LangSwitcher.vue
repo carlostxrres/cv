@@ -20,7 +20,8 @@ import { LANGS, lang, setLang } from "@/i18n";
 <style scoped>
 .lang-switcher {
   display: flex;
-  gap: 0.2rem;
+  gap: .5rem;
+  flex-wrap: wrap;
 }
 
 button {

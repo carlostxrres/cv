@@ -28,13 +28,13 @@ const displayUrl = resumeWeb.replace(/^https?:\/\//, "").replace(/\/$/, "");
       <Header />
       <AboutMe />
       <Education />
-      <Projects />
+      <Skills />
+      <!-- <Projects /> -->
     </aside>
 
     <main class="main">
       <Work />
       <Volunteering />
-      <Skills />
       <Languages />
     </main>
   </div>

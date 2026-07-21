@@ -20,7 +20,7 @@ section {
 }
 
 section:not(:first-child) {
-  margin-top: 1rem;
+  margin-top: 1.6rem;
 }
 
 h2 {

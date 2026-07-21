@@ -38,8 +38,6 @@ defineProps<{
 
 <style scoped>
 h3 {
-  /* font-family: var(--font-head); */
-  font-family: var(--font-body);
   font-weight: bold;
   color: var(--color-main);
 }

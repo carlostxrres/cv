@@ -75,7 +75,6 @@ a {
 .a-like {
   padding: .2rem .6rem;
   cursor: pointer;
-  font-size: .8rem;
   color: var(--color-text-2);
 }
 

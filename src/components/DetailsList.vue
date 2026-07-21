@@ -21,14 +21,19 @@ defineProps<{
 </template>
 
 <style scoped>
-dl:not(:first-child) {
-  margin-top: 1rem;
+p + dl,
+ul + dl {
+  margin-top: 1lh;
+}
+
+dl:not(:last-child) {
+  margin-bottom: 1lh;
 }
 
 dl {
   display: grid;
   grid-template-columns: max-content auto;
-  gap: 0.2rem 1rem;
+  gap: 0.4rem 1rem;
 }
 
 dt {

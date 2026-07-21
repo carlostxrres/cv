@@ -20,11 +20,19 @@ defineProps<{
   gap: 0.3rem 0.4rem;
   align-items: start;
   flex-wrap: wrap;
-  margin-block: 0.5rem;
 
   font-family: var(--font-mono);
   font-size: .8rem;
   font-weight: bold;
+}
+
+p + .tags,
+ul + .tags {
+  margin-top: 1lh;
+}
+
+.tags:not(:last-child) {
+  margin-bottom: 1lh;
 }
 
 .tags li {

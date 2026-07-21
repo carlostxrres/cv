@@ -63,6 +63,6 @@ defineProps<{
 }
 
 .timeline-list > li:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 1lh;
 }
 </style>

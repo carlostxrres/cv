@@ -101,11 +101,11 @@ const displayUrl = resumeWeb.replace(/^https?:\/\//, "").replace(/\/$/, "");
   font-style: italic;
   color: var(--color-main-3);
   text-align: end;
-  padding: 1rem 2rem;
+  padding-inline: 2rem;
 }
 
 .last-updated p {
-  margin-block: .5lh;
+  margin-block: 1lh;
 }
 
 /* Desktop: show it fixed on top of the action bar */

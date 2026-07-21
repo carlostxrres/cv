@@ -16,7 +16,7 @@ section {
   font-family: var(--font-body);
   flex-direction: column;
   display: flex;
-  gap: 0.5rem;
+  gap: .5lh;
 }
 
 section:not(:first-child) {

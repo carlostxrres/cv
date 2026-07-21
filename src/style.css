@@ -78,16 +78,8 @@ a {
   color: var(--color-text-2);
 }
 
-p {
-  margin-block: .3rem;
-}
-
-p:first-child {
-  margin-top: 0;
-}
-
-ul {
-  margin-block: .3rem;
+p:not(:first-of-type) {
+  margin-block: 1lh;
 }
 
 .print-only {

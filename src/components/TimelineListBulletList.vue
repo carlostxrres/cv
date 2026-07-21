@@ -22,6 +22,7 @@ defineProps<{
   list-style: disc none outside;
   list-style-type: disc;
   padding-left: var(--padding-left);
+  margin-block: 1lh;
   --padding-left: 1.2rem;
   --translate-y: 0.4rem;
 }

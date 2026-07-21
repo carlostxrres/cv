@@ -31,7 +31,6 @@ section:not(:first-child) {
 
 h2 {
   font-family: var(--font-body);
-  font-size: 1.2rem;
   font-weight: bold;
   padding-bottom: 0.2rem;
   border-bottom: 2px solid var(--color-main);

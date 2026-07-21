@@ -23,7 +23,7 @@ defineProps<{
   margin-block: 0.5rem;
 
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: .8rem;
   font-weight: bold;
 }
 

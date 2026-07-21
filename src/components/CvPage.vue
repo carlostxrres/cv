@@ -99,7 +99,7 @@ const displayUrl = resumeWeb.replace(/^https?:\/\//, "").replace(/\/$/, "");
 /* .last-updated */
 
 .last-updated {
-  font-size: small;
+  font-size: .8rem;
   font-style: italic;
   color: var(--color-main-3);
   text-align: end;

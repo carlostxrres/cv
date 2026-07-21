@@ -55,7 +55,7 @@ h3 {
 
 .institution,
 .location {
-  font-size: 0.7rem;
+  font-size: .8rem;
 }
 
 .institution {
@@ -73,7 +73,7 @@ h3 {
 .time {
   margin-left: auto;
   text-align: end;
-  font-size: 0.6rem;
+  font-size: .8rem;
   flex-shrink: 0;
 }
 
@@ -93,7 +93,7 @@ header {
 }
 
 .header-end a {
-  font-size: 0.6rem;
+  font-size: .6rem;
   color: var(--color-main-3);
   text-transform: uppercase;
   margin-right: calc(-1 * var(--a-padding));

@@ -6,7 +6,7 @@ import { cv, labels } from "@/i18n";
   <div class="cv-header">
     <img class="pic" src="/pic.jpg" :alt="labels.pictureAlt" />
 
-    <div>
+    <div class="cv-header-text">
       <h1>{{ cv.name }} {{ cv.lastName }}</h1>
       <p class="title">{{ cv.title }}</p>
     </div>
@@ -20,7 +20,6 @@ import { cv, labels } from "@/i18n";
   flex-direction: row;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .pic {
@@ -29,6 +28,12 @@ import { cv, labels } from "@/i18n";
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
+}
+
+.cv-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .title {

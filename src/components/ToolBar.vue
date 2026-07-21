@@ -37,7 +37,7 @@ const pdfHref = computed(() => resumePdfFor(lang.value));
   bottom: 0;
   background-color: var(--color-main-4);
   border-top: 1px solid var(--color-main-3);
-  padding: 0.3rem 1rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   gap: 1rem;

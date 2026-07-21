@@ -103,7 +103,7 @@ const displayUrl = resumeWeb.replace(/^https?:\/\//, "").replace(/\/$/, "");
   font-style: italic;
   color: var(--color-main-3);
   text-align: end;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 .last-updated p {

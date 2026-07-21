@@ -35,9 +35,9 @@ defineProps<{
 <style scoped>
 .timeline-list {
   list-style: circle none outside;
-  padding-left: 1rem;
+  padding-left: var(--padding-left);
   position: relative;
-  --padding-left: 1rem;
+  --padding-left: 1.4rem;
   --bullet-size: 0.6rem;
   --translate-y: 0.25rem;
 }

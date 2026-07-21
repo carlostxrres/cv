@@ -96,8 +96,6 @@ const displayUrl = resumeWeb.replace(/^https?:\/\//, "").replace(/\/$/, "");
   --tag-color: var(--color-main-4);
 }
 
-/* .last-updated */
-
 .last-updated {
   font-size: .8rem;
   font-style: italic;

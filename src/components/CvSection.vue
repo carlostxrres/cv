@@ -19,12 +19,6 @@ section {
   gap: 0.5rem;
 }
 
-/* @media print {
-  section {
-    font-family: var(--font-narrow);
-  }
-} */
-
 section:not(:first-child) {
   margin-top: 1rem;
 }

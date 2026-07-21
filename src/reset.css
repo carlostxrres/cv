@@ -124,7 +124,6 @@ svg {
 
 /* Configuramos la tipografía para toda la web */
 body {
-    font-size: 14px;
     font-family: var(--font-body);
     -webkit-hyphens: auto;
     -ms-hyphens: auto;

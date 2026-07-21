@@ -23,6 +23,11 @@
   --border-radius: 4px;
 }
 
+html {
+    /* This has to be in the root element (html) so 'rem' all over the app is relative to it */
+    font-size: 14px;
+}
+
 body {
   background-color: oklch(99% 0.01 var(--hue));
   background-image: linear-gradient(135deg, oklch(99% 0.01 var(--hue)) 0%, oklch(99% 0.004 var(--hue)) 100%);
@@ -40,7 +45,7 @@ strong {
 }
 
 small {
-  font-size: 85%;
+  font-size: .8rem;
   color: var(--color-text-2);
 }
 
@@ -70,7 +75,7 @@ a {
 .a-like {
   padding: 0.5rem 0.6rem;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: .8rem;
   color: var(--color-text-2);
 }
 
@@ -85,13 +90,6 @@ p:first-child {
 ul {
   margin-block: .3rem;
 }
-
-/* .inline-code {
-  font-weight: 600;
-  color: var(--color-main-2);
-  font-family: var(--font-mono);
-  font-size: .8rem;
-} */
 
 .print-only {
   display: none;

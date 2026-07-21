@@ -25,7 +25,7 @@
 
 html {
     /* This has to be in the root element (html) so 'rem' all over the app is relative to it */
-    font-size: 14px;
+    font-size: 12px;
 }
 
 body {

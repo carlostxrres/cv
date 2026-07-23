@@ -83,7 +83,7 @@ const displayUrl = resumeWeb.replace(/^https?:\/\//, "").replace(/\/$/, "");
 
 .aside,
 .main {
-  padding: 3rem 2.2rem;
+  padding: 3rem;
 }
 
 .aside {

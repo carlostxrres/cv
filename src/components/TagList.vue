@@ -23,7 +23,6 @@ defineProps<{
 
   font-family: var(--font-mono);
   font-size: .8rem;
-  font-weight: bold;
 }
 
 p + .tags,

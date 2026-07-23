@@ -91,7 +91,7 @@ const cv: Cv = {
     {
       institution: "Ironhack",
       title: "Bootcamp de back-end web",
-      period: "Feb 2023 - Juny 2023",
+      period: "Feb 2023 - Jun 2023",
       link: {
         text: "Certificat",
         url: "https://www.credential.net/ffaa5321-123d-4963-bff8-159456a2cde0",
@@ -141,7 +141,7 @@ const cv: Cv = {
     {
       title: "CS Andon Cord Subject Matter Expert (L4)",
       institution: "Amazon",
-      period: "Maig 2025 - Mar 2026",
+      period: "Mai 2025 - Mar 2026",
       description:
         "Partint de les responsabilitats del meu rol anterior, el meu paper es va ampliar per formar part de la gestió de l'equip.",
       bulletPoints: [
@@ -164,7 +164,7 @@ const cv: Cv = {
     {
       title: "CS Andon Cord Associate (L3)",
       institution: "Amazon",
-      period: "Gen 2022 - Maig 2025",
+      period: "Gen 2022 - Mai 2025",
       description:
         "Recerca de consultes de clients i discrepàncies d'inventari per identificar les causes dels pics d'insatisfacció i garantir l'exactitud de les dades de producte, en coordinació amb magatzems interns i proveïdors externs. A principis de 2023 em vaig convertir en l'únic desenvolupador front-end a temps complet de l'equip.",
       bulletPoints: [
@@ -195,7 +195,7 @@ const cv: Cv = {
       title: "Becari acadèmic",
       institution: "Atlas Language School",
       location: "Dublín",
-      period: "Juny 2018 - Set 2018",
+      period: "Jun 2018 - Set 2018",
       description:
         "Millora de l'eficiència de l'anàlisi quantitativa i qualitativa del feedback dels estudiants mitjançant el disseny de fulls de càlcul ad hoc, i suport administratiu al Departament Acadèmic de l'escola.",
     },

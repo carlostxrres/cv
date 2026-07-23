@@ -5,7 +5,8 @@ const cv: Cv = {
   lastName: "Torres Moral",
   title: "Managament Technician",
   aboutMe:
-    "Interdisciplinary professional bridging Political Science, education, and software development.\n\nFormer sole developer for an 80-person team at Amazon, building tools that automated workflows and drove data-based decisions.\n\nNow a Management Technician at Barcelona City Council's Education Department, applying a pragmatic, tech-driven approach to public policy and operations.",
+    "Interdisciplinary professional bridging political science, education, and software development, with a proven track record across diverse sectors (freelance, SMBs, corporate, and public administration).\n\nPreviously the sole developer for an 80-person team at Amazon, building tools to automate workflows and drive data-informed decisions. Currently serving as a management technician within the Education Department at the Barcelona City Council.",
+    // applying a pragmatic, tech-driven approach to public policy and operations
   contactDetails: [
     {
       label: "Email",
@@ -134,7 +135,7 @@ const cv: Cv = {
       title: "Management Technician",
       institution: "Barcelona City Council",
       period: "Mar 2026 - Now",
-      description: "",
+      description: "Providing operational and cross-functional support to the Directorate of Education in managing projects that promote the principles of the Charter of Educating Cities in Barcelona.",
       bulletPoints: [],
       tags: [],
     },

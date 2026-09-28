@@ -5,7 +5,7 @@ const cv: Cv = {
   lastName: "Torres Moral",
   title: "Tècnic Superior de Gestió",
   aboutMe:
-    "Professional interdisciplinari que uneix la ciència política, l'educació i el desenvolupament de programari, amb experiència en organitzacions diverses (com a autònom, en petites empreses, en una gran corporació i ara a l'administració).\n\nAnteriorment, únic desenvolupador per a un equip de 80 persones a Amazon, creant eines que automatitzaven fluxos de treball i impulsaven decisions basades en dades. Actualment, tècnic de gestió a la Direcció d'Educació de l'Ajuntament de Barcelona.",
+    "Professional interdisciplinari que uneix la ciència política, l'educació i el desenvolupament de programari, amb experiència en organitzacions diverses (com a autònom, en petites empreses, en una gran corporació i ara a l'administració).\n\nAnteriorment, únic desenvolupador per a un equip de 80 persones a Amazon, creant eines que automatitzaven fluxos de treball i impulsaven decisions basades en dades. Actualment, tècnic de gestió a l'Ajuntament de Barcelona.",
     // aplicant un enfocament pragmàtic i tecnològic a les polítiques públiques i les operacions
   contactDetails: [
     {
@@ -138,10 +138,19 @@ const cv: Cv = {
   ],
   work: [
     {
-      title: "Tècnic de gestió",
+      title: "Tècnic de gestió (Comissionada d'Acció Social)",
       institution: "Ajuntament de Barcelona",
-      periodStart: "2026-03",
+      periodStart: "2026-10-01",
       periodEnd: null,
+      description: "",
+      bulletPoints: [],
+      tags: [],
+    },
+    {
+      title: "Tècnic de gestió (Direcció d'Educació)",
+      institution: "Ajuntament de Barcelona",
+      periodStart: "2026-03-02",
+      periodEnd: "2026-09-30",
       description: "Suport operatiu i transversal a la Direcció d'Educació en la gestió de projectes que promouen els principis de la Carta de Ciutats Educadores a Barcelona.",
       bulletPoints: [],
       tags: [],

@@ -138,7 +138,7 @@ const cv: Cv = {
   ],
   work: [
     {
-      title: "Tècnic de gestió (Comissionada d'Acció Social)",
+      title: "Tècnic superior de gestió (Comissionada d'Acció Social)",
       institution: "Ajuntament de Barcelona",
       periodStart: "2026-10-01",
       periodEnd: null,
@@ -147,7 +147,7 @@ const cv: Cv = {
       tags: [],
     },
     {
-      title: "Tècnic de gestió (Direcció d'Educació)",
+      title: "Tècnic superior de gestió (Direcció d'Educació)",
       institution: "Ajuntament de Barcelona",
       periodStart: "2026-03-02",
       periodEnd: "2026-09-30",

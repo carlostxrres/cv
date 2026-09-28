@@ -138,7 +138,7 @@ const cv: Cv = {
   ],
   work: [
     {
-      title: "Management Technician (Commissioner for Social Action)",
+      title: "Senior Management Technician (Commissioner for Social Action)",
       institution: "Barcelona City Council",
       periodStart: "2026-10-01",
       periodEnd: null,
@@ -147,7 +147,7 @@ const cv: Cv = {
       tags: [],
     },
     {
-      title: "Management Technician (Directorate of Education)",
+      title: "Senior Management Technician (Directorate of Education)",
       institution: "Barcelona City Council",
       periodStart: "2026-03-02",
       periodEnd: "2026-09-30",

@@ -151,7 +151,7 @@ const cv: Cv = {
       institution: "Barcelona City Council",
       periodStart: "2026-03-02",
       periodEnd: "2026-09-30",
-      description: "Providing operational and cross-functional support to the Directorate of Education in managing projects that promote the principles of the Charter of Educating Cities in Barcelona.",
+      description: "Provided operational and cross-functional support to the Directorate of Education in managing projects that promote the principles of the Charter of Educating Cities in Barcelona.",
       bulletPoints: [],
       tags: [],
     },
@@ -165,10 +165,10 @@ const cv: Cv = {
       bulletPoints: [
         "Responsible for monitoring the KPIs of an 80+ associates team.",
         "Automated 8 weekly reports about team productivity and quality.",
-        "Analyzing data for ad-hoc deep dives.",
-        "Mentoring a junior developer.",
-        "Providing technical consultation to several teams.",
-        "Maintaining 31 production userscripts with 90+ users each.",
+        "Analyzed data for ad-hoc deep dives.",
+        "Mentored a junior developer.",
+        "Provided technical consultation to several teams.",
+        "Maintained 31 production userscripts with 90+ users each.",
         // process improvement, operational procedures, launches
         // complete projects within given timelines
       ],

@@ -159,7 +159,7 @@ const cv: Cv = {
       title: "CS Andon Cord Subject Matter Expert (L4)",
       institution: "Amazon",
       periodStart: "2025-05",
-      periodEnd: "2026-03",
+      periodEnd: "2026-02-28",
       description:
         "Building upon my previous role's responsibilities, my role expanded to being part of the team's management.",
       bulletPoints: [
